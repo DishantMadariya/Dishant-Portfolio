@@ -1,0 +1,16 @@
+/* xs */
+@media(max-width:575px){
+    .wb{
+        width: 165px !important;
+        word-wrap: break-word;
+    }
+}
+/* sm */
+@media (min-width:576px) {
+}
+/* md */
+@media (min-width:768px) {
+}
+/* lg */
+@media (min-width:992px)  {
+}

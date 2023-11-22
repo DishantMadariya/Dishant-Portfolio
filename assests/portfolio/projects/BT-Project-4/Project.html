@@ -1,0 +1,1182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap- Project</title>
+    <link rel="stylesheet" href="fonts/transfonter.org-20230216-035734/stylesheet.css" type="text/css">
+    <link rel="stylesheet" href="extra/RemixIcon_Fonts_v2.5.0 (2)/fonts/remixicon.css" type="text/css">
+    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+</head>
+
+<body>
+
+    <!-- Header Start -->
+    <header class="navbar navbar-expand-lg position-fixed py-2 w-100">
+        <div class="container">
+            <div>
+                <h2><a href="#" class="nav-link text-white">Baker</a></h2>
+            </div>
+            <button class="navbar-toggler text-white border-info z-1" data-bs-toggle="offcanvas"
+                data-bs-target="#canvas">
+                <i class="ri-menu-line"></i>
+            </button>
+            <nav class="collapse navbar-collapse justify-content-end menu navbar-expand-lg" id="navbar">
+                <ul class="navbar-nav">
+                    <li><a href="#" class=" mx-3 py-3 a">Home</a></li>
+                    <li><a href="#" class=" mx-3 py-3">About</a></li>
+                    <li><a href="#" class=" mx-3 py-3">Service</a></li>
+                    <li><a href="#" class=" mx-3 py-3">Pricing</a></li>
+                    <li><a href="#" class=" mx-3 py-3">Team</a></li>
+                    <li><a href="#" class=" mx-3 py-3">Blog</a></li>
+                    <li class="dropdown1">
+                        <a href="#" class=" mx-3 py-3 d-flex align-items-center">Portfolio <i class="ri-arrow-down-s-line ms-1"></i></a>
+                        <div class="dropdown1-menu">
+                            <ul>
+                                <li><a href="#" class="nav-link p-2">Drop Down 1</a></li>
+                                <li class="sub1">
+                                    <a href="#" class="nav-link p-2 d-flex align-items-center">Deep Drop Down <i class="ri-arrow-right-s-line ms-2"></i></a>
+                                    <div class="sub1-menu">
+                                        <ul>
+                                            <li><a href="#" class="nav-link p-2">Deep Drop Down 1</a></li>
+                                            <li><a href="#" class="nav-link p-2">Deep Drop Down 2</a></li>
+                                            <li><a href="#" class="nav-link p-2">Deep Drop Down 3</a></li>
+                                            <li><a href="#" class="nav-link p-2">Deep Drop Down 4</a></li>
+                                            <li><a href="#" class="nav-link p-2">Deep Drop Down 5</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li><a href="#" class="nav-link p-2 ">Drop Down 2</a></li>
+                                <li><a href="#" class="nav-link p-2">Drop Down 3</a></li>
+                                <li><a href="#" class="nav-link p-2">Drop Down 4</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li><a href="#" class=" mx-3 py-3">Contact</a></li>
+                </ul>
+                <button type="button" class="btn btn-outline-warning py-1 px-3" data-bs-toggle="modal"
+                    data-bs-target="#modal">Login</button>
+            </nav>
+        </div>
+    </header>
+    
+    <!-- Modal Start  -->
+    <div class="modal fade" id="modal" data-bs-backdrop="static">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2>Login here</h2>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="input-group">
+                        <span class="input-group-text">@</span>
+                        <input type="text" placeholder="Username" class="form-control">
+                    </div>
+                    <div class="input-group mt-3">
+                        <input type="password" placeholder="Password" class="form-control ">
+                        <span class="input-group-text"><i class="ri-eye-off-line"></i></span>
+                    </div>
+                    <input type="checkbox" class="form-check-input me-2">Show password
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-success" data-bs-toggle="modal"
+                        data-bs-target="#login">Login</button>
+                    <button type="button" class="btn btn-danger" data-bs-toggle="modal"
+                        data-bs-target="#signup">Signup</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal" id="login">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4>Login Sucessful &#128540;</h4>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="signup" data-bs-backdrop="static">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2>Signup here</h2>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="input-group">
+                        <span class="input-group-text">abc</span>
+                        <input type="text" placeholder="Your Name" class="form-control">
+                    </div>
+                    <div class="input-group my-3">
+                        <input type="text" placeholder="Username" class="form-control">
+                        <span class="input-group-text">A1$</span>
+                    </div>
+                    <div class="input-group">
+                        <span class="input-group-text">+91 9876543210</span>
+                        <input type="number" placeholder="Enter Mobile No." class="form-control">
+                    </div>
+                    <div class="input-group mt-3">
+                        <input type="password" placeholder="Enter Password" class="form-control">
+                        <span class="input-group-text"><i class="ri-eye-off-line"></i></span>
+                    </div>
+                    <p>Enter atleast 8 alpha, number and char</p>
+                    <div class="input-group mt-3">
+                        <input type="password" placeholder="Confirm Password" class="form-control">
+                        <span class="input-group-text"><i class="ri-eye-off-line"></i></span>
+                    </div>
+                    <p>Enter atleast 8 alpha, number and char</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-info" data-bs-toggle="modal"
+                        data-bs-target="#submit">Submit</button>
+                    <button type="button" class="btn btn-dark" data-bs-toggle="modal"
+                        data-bs-target="#modal">Login</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal" id="submit">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4>Submit Sucessful &#128522;</h4>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="offcanvas offcanvas-start fade" data-bs-scroll="false" data-bs-backdrop="static" id="canvas">
+        <div class="offcanvas-header">
+            <h3>Menu</h3>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+        </div>
+        <div class="offcanvas-body">
+            <ul>
+                <li><a href="#" class=" mx-2 py-2 text-dark">Home</a></li>
+                <li><a href="#" class=" mx-2 py-2 text-dark">About</a></li>
+                <li><a href="#" class=" mx-2 py-2 text-dark">Service</a></li>
+                <li><a href="#" class=" mx-2 py-2 text-dark">Pricing</a></li>
+                <li><a href="#" class=" mx-2 py-2 text-dark">Team</a></li>
+                <li><a href="#" class=" mx-2 py-2 text-dark">Blog</a></li>
+                <li><a href="#" class=" mx-2 py-2 text-dark">Portfolio</a></li>
+                <li><a href="#" class=" mx-2 py-2 text-dark">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+    <!-- Modal End  -->
+
+
+    <!-- Header End -->
+
+    <main>
+
+        <!-- Banner Start  -->
+        <div class="carousel slide" data-bs-ride="carousel" id="slider">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#slider" data-bs-slide-to="0" class="active"></button>
+                <button type="button" data-bs-target="#slider" data-bs-slide-to="1"></button>
+                <button type="button" data-bs-target="#slider" data-bs-slide-to="2"></button>
+                <button type="button" data-bs-target="#slider" data-bs-slide-to="3"></button>
+                <button type="button" data-bs-target="#slider" data-bs-slide-to="4"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="banner carousel-item active">
+                    <img src="images/b1.jpg" alt="" width="100%" height="657px">
+                    <div class="text-center car-content d-flex justify-content-center align-items-center">
+                        <h2>We are professional</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor <br>
+                            incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud <br>
+                            exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                        <button type="button" class="btn btn-outline-warning py-2 px-5">Get Started</button>
+                    </div>
+                </div>
+                <div class="banner carousel-item">
+                    <img src="images/b2.jpg" alt="" width="100%" height="657px">
+                    <div class="position-absolute text-center car-content car-overlay d-flex justify-content-center align-items-center">
+                        <h2>At vero eos et accusamus</h2>
+                        <p>Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus <br>
+                            id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor <br>
+                            repellendus. Temporibus autem quibusdam et aut officiis debitis aut.</p>
+                        <button type="button" class="btn btn-outline-warning py-2 px-5">Get Started</button>
+                    </div>
+                </div>
+                <div class="banner carousel-item">
+                    <img src="images/b3.jpg" alt="" width="100%" height="657px">
+                    <div
+                        class="position-absolute text-center car-content car-overlay d-flex justify-content-center align-items-center">
+                        <h2>Temporibus autem quibusdam</h2>
+                        <p>Beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit <br>
+                            aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione <br>
+                            voluptatem sequi nesciunt omnis iste natus error sit voluptatem accusantium.</p>
+                        <button type="button" class="btn btn-outline-warning py-2 px-5">Get Started</button>
+                    </div>
+                </div>
+                <div class="banner carousel-item">
+                    <img src="images/b4.jpg" alt="" width="100%" height="657px">
+                    <div
+                        class="position-absolute text-center car-content car-overlay d-flex justify-content-center align-items-center">
+                        <h2>Nam libero tempore</h2>
+                        <p>Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci <br>
+                            velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam <br>
+                            aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum.</p>
+                        <button type="button" class="btn btn-outline-warning py-2 px-5">Get Started</button>
+                    </div>
+                </div>
+                <div class="banner carousel-item">
+                    <img src="images/b5.jpg" alt="" width="100%" height="657px">
+                    <div
+                        class="position-absolute text-center car-content car-overlay d-flex justify-content-center align-items-center">
+                        <h2>Magnam aliquam quaerat</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor <br>
+                            incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud <br>
+                            exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                        <button type="button" class="btn btn-outline-warning py-2 px-5">Get Started</button>
+                    </div>
+                </div>
+            </div>
+            <button type="button" class="carousel-control-prev" data-bs-target="#slider" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button type="button" class="carousel-control-next" data-bs-target="#slider" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </button>
+        </div>
+        <!-- Banner End  -->
+
+        
+        <!-- Client Start  -->
+        <section class="client py-5 text-center">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-2 col-sm-6 col-md-4 d-flex justify-content-center align-items-center">
+                        <div class="client-img">
+                            <img src="images/l1.png" alt="" width="50%">
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-sm-6 col-md-4 d-flex justify-content-center align-items-center">
+                        <div class="client-img">
+                            <img src="images/l2.png" alt="" width="50%">
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-sm-6 col-md-4 d-flex justify-content-center align-items-center">
+                        <div class="client-img">
+                            <img src="images/l3.png" alt="" width="50%">
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-sm-6 col-md-4 d-flex justify-content-center align-items-center">
+                        <div class="client-img">
+                            <img src="images/l4.png" alt="" width="50%">
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-sm-6 col-md-4 d-flex justify-content-center align-items-center">
+                        <div class="client-img">
+                            <img src="images/l5.png" alt="" width="50%">
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-sm-6 col-md-4 d-flex justify-content-center align-items-center">
+                        <div class="client-img">
+                            <img src="images/l6.png" alt="" width="50%">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Client Start  -->
+
+
+        <!-- About Start  -->
+        <section class="my-3">
+            <div class="container">
+                <div class="row align-items-cente">
+                    <div class="col-lg-6 col-sm-12 col-md-12">
+                        <div class="about-img">
+                            <img src="images/about.jpg" class="img-thumbnail" alt="" width="100%">
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-sm-12 col-md-12">
+                        <div class="about-heading ms-3">
+                            <h2>Voluptatem dignissimos provident quasi</h2>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                                ut labore et dolore magna aliqua. Duis aute irure dolor in reprehenderit</p>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6 col-sm-12">
+                                <div class="about-content ms-3 mt-2">
+                                    <i class="ri-todo-line text-dark"></i>
+                                    <h3>Corporis voluptates</h3>
+                                    <p>Consequuntur sunt aut quasi enim aliquam quae harum pariatur laboris nisi ut
+                                        aliquip</p>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-sm-12">
+                                <div class="about-content ms-3 mt-2">
+                                    <i class="ri-ticket-line text-dark"></i>
+                                    <h3>Ullamco laboris nisi</h3>
+                                    <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+                                        deserunt</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- About End  -->
+
+
+        <!-- Count End  -->
+        <section class="count py-3">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3 col-sm-6">
+                        <div class="count-content py-4 d-flex justify-content-center align-items-center flex-column">
+                            <h2>232</h2>
+                            <p>Clients</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6">
+                        <div class="count-content py-4 d-flex justify-content-center align-items-center flex-column">
+                            <h2>521</h2>
+                            <p>Projects</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6">
+                        <div class="count-content py-4 d-flex justify-content-center align-items-center flex-column">
+                            <h2>1463</h2>
+                            <p>Hours Of Support</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6">
+                        <div class="count-content py-4 d-flex justify-content-center align-items-center flex-column">
+                            <h2>15</h2>
+                            <p>Hard Worker</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Count End  -->
+
+
+        <!-- Service Start  -->
+        <section>
+            <div class="container">
+                <div class="service-title text-center mt-5">
+                    <h2 class="position-relative">SERVICES</h2>
+                    <p class="m-5">Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum
+                        quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit
+                        suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+                </div>
+                <div class="row text-center">
+                    <div class="col-lg-4 col-sm-12 col-md-6">
+                        <div class="service-item  p-4 my-2">
+                            <div class="service-icon1 m-auto mb-3">
+                                <i class="ri-global-line"></i>
+                            </div>
+                            <h4>Lorem ipsum.</h4>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veniam, voluptatem?</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-12 col-md-6">
+                        <div class="service-item  p-4 my-2">
+                            <div class="service-icon2 m-auto mb-3">
+                                <i class="ri-file-text-line"></i>
+                            </div>
+                            <h4>Lorem ipsum.</h4>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veniam, voluptatem?</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-12 col-md-6">
+                        <div class="service-item  p-4 my-2">
+                            <div class="service-icon3 m-auto mb-3">
+                                <i class="ri-time-line"></i>
+                            </div>
+                            <h4>Lorem ipsum.</h4>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veniam, voluptatem?</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-12 col-md-6">
+                        <div class="service-item  p-4 my-2">
+                            <div class="service-icon4 m-auto mb-3">
+                                <i class="ri-book-line"></i>
+                            </div>
+                            <h4>Lorem ipsum.</h4>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veniam, voluptatem?</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-12 col-md-6">
+                        <div class="service-item  p-4 my-2">
+                            <div class="service-icon5 m-auto mb-3">
+                                <i class="ri-computer-line"></i>
+                            </div>
+                            <h4>Lorem ipsum.</h4>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veniam, voluptatem?</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-12 col-md-6">
+                        <div class="service-item  p-4 my-2">
+                            <div class="service-icon6 m-auto mb-3">
+                                <i class="ri-ancient-gate-line"></i>
+                            </div>
+                            <h4>Lorem ipsum.</h4>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veniam, voluptatem?</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Service End  -->
+
+
+        <!-- Call-to-action Start  -->
+        <section class="call-to-action py-5 my-3">
+            <div class="container">
+                <div class="call-content text-center">
+                    <h2 class="text-white">Call To Action</h2>
+                    <p class="mt-3 text-white">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
+                        dolore eu fugiat nulla pariatur. Excepteur sint occaecat <br> cupidatat non proident, sunt in culpa
+                        qui officia deserunt mollit anim id est laborum.
+                    </p>
+                    <button type="button" class="btn btn-outline-warning text-white btn-lg py-2 px-5 mt-4">Call To
+                        Action</button>
+                </div>
+            </div>
+        </section>
+        <!-- Call-to-action End  -->
+
+
+        <!-- Testimonials start  -->
+        <section>
+            <div class="container">
+                <div class="testimonial-title text-center mt-5">
+                    <h2 class="position-relative">Testimonials</h2>
+                    <p class="m-5">Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum
+                    quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit
+                    suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+                </div>
+                <div class="carousel slide" data-bs-ride="carousel" id="testimonial">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="row">
+                                <div class="col-lg-4 col-sm-12 col-md-6">
+                                    <div class="testimonial-content">
+                                        <p class="px-3 py-4 item"><i class="ri-double-quotes-l"></i> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsum quam maxime quas laborum dicta ad esse sapiente. Impedit vero iste nam commodi maxime reiciendis quam molestiae voluptas, mollitia <i class="ri-double-quotes-r"></i></p>
+                                        <div class="content-img ms-4">
+                                            <img src="images/testimonials-1.jpg" alt="" width="15%">
+                                            <h4>Saul Goodman</h4>
+                                            <p>CEO & Founder</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-sm-12 col-md-6">
+                                    <div class="testimonial-content">
+                                        <p class="px-3 py-4 item"><i class="ri-double-quotes-l"></i> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsum quam maxime quas laborum dicta ad esse sapiente. Impedit vero iste nam commodi maxime reiciendis quam molestiae voluptas, mollitia, consequuntur ipsam. <i class="ri-double-quotes-r"></i></p>
+                                        <div class="content-img ms-4">
+                                            <img src="images/testimonials-2.jpg" alt="" width="15%">
+                                            <h4>Sara Willson</h4>
+                                            <p>Designer</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-sm-12 col-md-6">
+                                    <div class="testimonial-content">
+                                        <p class="px-3 py-4 item"><i class="ri-double-quotes-l"></i> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsum quam maxime quas laborum dicta ad esse sapiente. Impedit vero iste nam commodi maxime reiciendis quam molestiae voluptas, mollitia, consequuntur ipsam. <i class="ri-double-quotes-r"></i></p>
+                                        <div class="content-img ms-4">
+                                            <img src="images/testimonials-3.jpg" alt="" width="15%">
+                                            <h4>Jena Karlis</h4>
+                                            <p>Store Owner</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="row">
+                                <div class="col-lg-4 col-sm-12 col-md-6">
+                                    <div class="testimonial-content">
+                                        <p class="px-3 py-4 item"><i class="ri-double-quotes-l"></i> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsum quam maxime quas laborum dicta ad esse sapiente. Impedit vero iste nam commodi maxime reiciendis quam molestiae voluptas, mollitia, consequuntur ipsam. <i class="ri-double-quotes-r"></i></p>
+                                        <div class="content-img ms-4">
+                                            <img src="images/testimonials-2.jpg" alt="" width="15%">
+                                            <h4>Sara Willson</h4>
+                                            <p>Designer</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-sm-12 col-md-6">
+                                    <div class="testimonial-content">
+                                        <p class="px-3 py-4 item"><i class="ri-double-quotes-l"></i> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsum quam maxime quas laborum dicta ad esse sapiente. Impedit vero iste nam commodi maxime reiciendis quam molestiae voluptas, mollitia, consequuntur ipsam. <i class="ri-double-quotes-r"></i></p>
+                                        <div class="content-img ms-4">
+                                            <img src="images/testimonials-3.jpg" alt="" width="15%">
+                                            <h4>Jena Karlis</h4>
+                                            <p>Store Owner</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-sm-12 col-md-6">
+                                    <div class="testimonial-content">
+                                        <p class="px-3 py-4 item"><i class="ri-double-quotes-l"></i> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsum quam maxime quas laborum dicta ad esse sapiente. Impedit vero iste nam commodi maxime reiciendis quam molestiae voluptas, mollitia, consequuntur ipsam. <i class="ri-double-quotes-r"></i></p>
+                                        <div class="content-img ms-4">
+                                            <img src="images/testimonials-4.jpg" alt="" width="15%">
+                                            <h4>Matt Brandon</h4>
+                                            <p>Freelancer</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="row">
+                                <div class="col-lg-4 col-sm-12 col-md-6">
+                                    <div class="testimonial-content">
+                                        <p class="px-3 py-4 item"><i class="ri-double-quotes-l"></i> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsum quam maxime quas laborum dicta ad esse sapiente. Impedit vero iste nam commodi maxime reiciendis quam molestiae voluptas, mollitia, consequuntur ipsam. <i class="ri-double-quotes-r"></i></p>
+                                        <div class="content-img ms-4">
+                                            <img src="images/testimonials-3.jpg" alt="" width="15%">
+                                            <h4>Jena Karlis</h4>
+                                            <p>Store Owner</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-sm-12 col-md-6">
+                                    <div class="testimonial-content">
+                                        <p class="px-3 py-4 item"><i class="ri-double-quotes-l"></i> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsum quam maxime quas laborum dicta ad esse sapiente. Impedit vero iste nam commodi maxime reiciendis quam molestiae voluptas, mollitia, consequuntur ipsam. <i class="ri-double-quotes-r"></i></p>
+                                        <div class="content-img ms-4">
+                                            <img src="images/testimonials-4.jpg" alt="" width="15%">
+                                            <h4>Matt Brandon</h4>
+                                            <p>Freelancer</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-sm-12 col-md-6">
+                                    <div class="testimonial-content">
+                                        <p class="px-3 py-4 item"><i class="ri-double-quotes-l"></i> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsum quam maxime quas laborum dicta ad esse sapiente. Impedit vero iste nam commodi maxime reiciendis quam molestiae voluptas, mollitia, consequuntur ipsam. <i class="ri-double-quotes-r"></i></p>
+                                        <div class="content-img ms-4">
+                                            <img src="images/testimonials-5.jpg" alt="" width="15%">
+                                            <h4>John Larson</h4>
+                                            <p>Enterpreneur</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="row">
+                                <div class="col-lg-4 col-sm-12 col-md-6">
+                                    <div class="testimonial-content">
+                                        <p class="px-3 py-4 item"><i class="ri-double-quotes-l"></i> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsum quam maxime quas laborum dicta ad esse sapiente. Impedit vero iste nam commodi maxime reiciendis quam molestiae voluptas, mollitia, consequuntur ipsam. <i class="ri-double-quotes-r"></i></p>
+                                        <div class="content-img ms-4">
+                                            <img src="images/testimonials-4.jpg" alt="" width="15%">
+                                            <h4>Matt Brandon</h4>
+                                            <p>Freelancer</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-sm-12 col-md-6">
+                                    <div class="testimonial-content">
+                                        <p class="px-3 py-4 item"><i class="ri-double-quotes-l"></i> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsum quam maxime quas laborum dicta ad esse sapiente. Impedit vero iste nam commodi maxime reiciendis quam molestiae voluptas, mollitia, consequuntur ipsam. <i class="ri-double-quotes-r"></i></p>
+                                        <div class="content-img ms-4">
+                                            <img src="images/testimonials-5.jpg" alt="" width="15%">
+                                            <h4>John Larson</h4>
+                                            <p>Enterpreneur</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-sm-12 col-md-6">
+                                    <div class="testimonial-content">
+                                        <p class="px-3 py-4 item"><i class="ri-double-quotes-l"></i> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsum quam maxime quas laborum dicta ad esse sapiente. Impedit vero iste nam commodi maxime reiciendis quam molestiae voluptas, mollitia <i class="ri-double-quotes-r"></i></p>
+                                        <div class="content-img ms-4">
+                                            <img src="images/testimonials-1.jpg" alt="" width="15%">
+                                            <h4>Saul Goodman</h4>
+                                            <p>CEO & Founder</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                <button type="button" class="carousel-control-prev" data-bs-target="#testimonial" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </button>
+                <button type="button" class="carousel-control-next" data-bs-target="#testimonial" data-bs-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </button>    
+                </div>
+            </div>
+        </section>
+        <!-- Testimonials End  -->
+
+
+        <!-- Portfolio start  -->
+        <section>
+            <div class="container">
+                <div class="portfolio-title text-center mt-5">
+                    <h2 class="position-relative">Portfolio</h2>
+                    <p class="m-5">Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum
+                        quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit
+                        suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+                </div>
+                <div class="portfolio-btn text-center">
+                    <button type="button" class="btn btn-warning active py-2 px-4">All</button>
+                    <button type="button" class="btn btn-bg-warning py-2 px-4">App</button>
+                    <button type="button" class="btn btn-bg-warning py-2 px-4">Card</button>
+                    <button type="button" class="btn btn-bg-warning py-2 px-4">Web</button>
+                </div>
+                <div class="row mt-3">
+                    <div class="col-lg-4 col-md-6">
+                        <div class="portfolio-img position-relative my-3">
+                            <img src="images/portfolio-1.jpg" alt="" width="100%">
+                            <div class="overlay px-4 position-absolute bg-warning py-2">
+                                <div class="row align-items-center">
+                                    <div class="col-6">
+                                        <div class="overlay-content text-white">
+                                            <h5>App 1</h5>
+                                            <h6>App</h6>
+                                        </div>
+                                    </div>
+                                    <div class="col-6">
+                                        <div class="overlay-icon d-flex justify-content-end align-items-center">
+                                            <a href="#" class="me-4 text-white">+</a>
+                                            <a href="#"><i class="ri-links-line text-white"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="portfolio-img position-relative my-3">
+                            <img src="images/portfolio-2.jpg" alt="" width="100%">
+                            <div class="overlay px-4 position-absolute bg-warning py-2">
+                                <div class="row align-items-center">
+                                    <div class="col-6">
+                                        <div class="overlay-content text-white">
+                                            <h5>Web 3</h5>
+                                            <h6>Web</h6>
+                                        </div>
+                                    </div>
+                                    <div class="col-6">
+                                        <div class="overlay-icon d-flex justify-content-end align-items-center">
+                                            <a href="#" class="me-4 text-white">+</a>
+                                            <a href="#"><i class="ri-links-line text-white"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="portfolio-img position-relative my-3">
+                            <img src="images/portfolio-3.jpg" alt="" width="100%">
+                            <div class="overlay px-4 position-absolute bg-warning py-2">
+                                <div class="row align-items-center">
+                                    <div class="col-6">
+                                        <div class="overlay-content text-white">
+                                            <h5>Card 2</h5>
+                                            <h6>Card</h6>
+                                        </div>
+                                    </div>
+                                    <div class="col-6">
+                                        <div class="overlay-icon d-flex justify-content-end align-items-center">
+                                            <a href="#" class="me-4 text-white">+</a>
+                                            <a href="#"><i class="ri-links-line text-white"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="portfolio-img position-relative my-3">
+                            <img src="images/portfolio-4.jpg" alt="" width="100%">
+                            <div class="overlay px-4 position-absolute bg-warning py-2">
+                                <div class="row align-items-center">
+                                    <div class="col-6">
+                                        <div class="overlay-content text-white">
+                                            <h5>Web 2</h5>
+                                            <h6>Web</h6>
+                                        </div>
+                                    </div>
+                                    <div class="col-6">
+                                        <div class="overlay-icon d-flex justify-content-end align-items-center">
+                                            <a href="#" class="me-4 text-white">+</a>
+                                            <a href="#"><i class="ri-links-line text-white"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="portfolio-img position-relative my-3">
+                            <img src="images/portfolio-5.jpg" alt="" width="100%">
+                            <div class="overlay px-4 position-absolute bg-warning py-2">
+                                <div class="row align-items-center">
+                                    <div class="col-6">
+                                        <div class="overlay-content text-white">
+                                            <h5>App 3</h5>
+                                            <h6>App</h6>
+                                        </div>
+                                    </div>
+                                    <div class="col-6">
+                                        <div class="overlay-icon d-flex justify-content-end align-items-center">
+                                            <a href="#" class="me-4 text-white">+</a>
+                                            <a href="#"><i class="ri-links-line text-white"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="portfolio-img position-relative my-3">
+                            <img src="images/portfolio-6.jpg" alt="" width="100%">
+                            <div class="overlay px-4 position-absolute bg-warning py-2">
+                                <div class="row align-items-center">
+                                    <div class="col-6">
+                                        <div class="overlay-content text-white">
+                                            <h5>Card 1</h5>
+                                            <h6>Card</h6>
+                                        </div>
+                                    </div>
+                                    <div class="col-6">
+                                        <div class="overlay-icon d-flex justify-content-end align-items-center">
+                                            <a href="#" class="me-4 text-white">+</a>
+                                            <a href="#"><i class="ri-links-line text-white"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="portfolio-img position-relative my-3">
+                            <img src="images/portfolio-7.jpg" alt="" width="100%">
+                            <div class="overlay px-4 position-absolute bg-warning py-2">
+                                <div class="row align-items-center">
+                                    <div class="col-6">
+                                        <div class="overlay-content text-white">
+                                            <h5>Card 3</h5>
+                                            <h6>Card</h6>
+                                        </div>
+                                    </div>
+                                    <div class="col-6">
+                                        <div class="overlay-icon d-flex justify-content-end align-items-center">
+                                            <a href="#" class="me-4 text-white">+</a>
+                                            <a href="#"><i class="ri-links-line text-white"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="portfolio-img position-relative my-3">
+                            <img src="images/portfolio-8.jpg" alt="" width="100%">
+                            <div class="overlay px-4 position-absolute bg-warning py-2">
+                                <div class="row align-items-center">
+                                    <div class="col-6">
+                                        <div class="overlay-content text-white">
+                                            <h5>Web 3</h5>
+                                            <h6>Web</h6>
+                                        </div>
+                                    </div>
+                                    <div class="col-6">
+                                        <div class="overlay-icon d-flex justify-content-end align-items-center">
+                                            <a href="#" class="me-4 text-white">+</a>
+                                            <a href="#"><i class="ri-links-line text-white"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="portfolio-img position-relative my-3">
+                            <img src="images/portfolio-9.jpg" alt="" width="100%">
+                            <div class="overlay px-4 position-absolute bg-warning py-2">
+                                <div class="row align-items-center">
+                                    <div class="col-6">
+                                        <div class="overlay-content text-white">
+                                            <h5>App 1</h5>
+                                            <h6>App</h6>
+                                        </div>
+                                    </div>
+                                    <div class="col-6">
+                                        <div class="overlay-icon d-flex justify-content-end align-items-center">
+                                            <a href="#" class="me-4 text-white">+</a>
+                                            <a href="#"><i class="ri-links-line text-white"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Portfolio End  -->
+
+
+        <!-- Team Start  -->
+        <section class="team mt-3">
+            <div class="container">
+                <div class="team-title text-center mt-1">
+                    <h2 class="position-relative">Team</h2>
+                    <p class="m-5">Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum
+                        quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit
+                        suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+                </div>
+                <div class="row">
+                    <div class="col-lg-3 col-md-6">
+                        <div class="team-img position-relative">
+                            <img src="images/team-1.jpg" alt="team-1" width="100%">
+                            <div class="team-content text-center py-2 bg-white">
+                                <h4>Wealter White</h4>
+                                <p>Chief Excutive Officer</p>
+                            </div>
+                            <div class="team-overlay text-center position-absolute bg-white py-2">
+                                <a href="#" class="mx-3"><i class="ri-twitter-fill"></i></a>
+                                <a href="#" class="mx-3"><i class="ri-facebook-circle-fill"></i></a>
+                                <a href="#" class="mx-3"><i class="ri-instagram-line"></i></a>
+                                <a href="#" class="mx-3"><i class="ri-linkedin-box-fill"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="team-img position-relative">
+                            <img src="images/team-2.jpg" alt="team-2" width="100%">
+                            <div class="team-content text-center py-2 bg-white">
+                                <h4>Wealter White</h4>
+                                <p>Chief Excutive Officer</p>
+                            </div>
+                            <div class="team-overlay text-center position-absolute bg-white py-2">
+                                <a href="#" class="mx-3"><i class="ri-twitter-fill"></i></a>
+                                <a href="#" class="mx-3"><i class="ri-facebook-circle-fill"></i></a>
+                                <a href="#" class="mx-3"><i class="ri-instagram-line"></i></a>
+                                <a href="#" class="mx-3"><i class="ri-linkedin-box-fill"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="team-img position-relative">
+                            <img src="images/team-3.jpg" alt="team-3" width="100%">
+                            <div class="team-content text-center py-2 bg-white">
+                                <h4>Wealter White</h4>
+                                <p>Chief Excutive Officer</p>
+                            </div>
+                            <div class="team-overlay text-center position-absolute bg-white py-2">
+                                <a href="#" class="mx-3"><i class="ri-twitter-fill"></i></a>
+                                <a href="#" class="mx-3"><i class="ri-facebook-circle-fill"></i></a>
+                                <a href="#" class="mx-3"><i class="ri-instagram-line"></i></a>
+                                <a href="#" class="mx-3"><i class="ri-linkedin-box-fill"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="team-img position-relative">
+                            <img src="images/team-4.jpg" alt="team-4" width="100%">
+                            <div class="team-content text-center py-2 bg-white">
+                                <h4>Wealter White</h4>
+                                <p>Chief Excutive Officer</p>
+                            </div>
+                            <div class="team-overlay text-center position-absolute bg-white py-2">
+                                <a href="#" class="mx-3"><i class="ri-twitter-fill"></i></a>
+                                <a href="#" class="mx-3"><i class="ri-facebook-circle-fill"></i></a>
+                                <a href="#" class="mx-3"><i class="ri-instagram-line"></i></a>
+                                <a href="#" class="mx-3"><i class="ri-linkedin-box-fill"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Team End  -->
+
+
+        <!-- Pricing start  -->
+        <section>
+            <div class="container">
+                <div class="price-title text-center mt-5">
+                    <h2 class="position-relative">Pricing</h2>
+                    <p class="m-5">Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum
+                        quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit
+                        suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+                </div>
+                <div class="row">
+                    <div class="col-lg-3 col-md-6">
+                        <div class="price-content text-center">
+                            <h4 class="p-3">Free</h4>
+                            <ul class="py-3">
+                                <sup class="text-warning">$</sup>
+                                <span class="text-warning">0</span>
+                                <li class="d-inline">/month</li>
+                                <li class="my-2">Aida dere</li>
+                                <li class="my-2">Nec feugiat nisl</li>
+                                <li class="my-2">Nulla at volutpat dola</li>
+                                <li class="my-2 text-secondary"><del>Pharetra massa</del></li>
+                                <li class="my-2 text-secondary"><del>Massa ultricies mi</del></li>
+                            </ul>
+                            <div class="price-btn p-2">
+                                <button type="button" class="btn btn-outline-secondary px-4 py-2">Buy Now</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="price-content text-center">
+                            <h4 class="bg-warning p-3">Business</h4>
+                            <ul class="py-3">
+                                <sup class="text-warning">$</sup>
+                                <span class="text-warning">19</span>
+                                <li class="d-inline">/month</li>
+                                <li class="my-2">Aida dere</li>
+                                <li class="my-2">Nec feugiat nisl</li>
+                                <li class="my-2">Nulla at volutpat dola</li>
+                                <li class="my-2">Pharetra massa</li>
+                                <li class="my-2 text-secondary"><del>Massa ultricies mi</del></li>
+                            </ul>
+                            <div class="price-btn p-2">
+                                <button type="button" class="btn bg-warning px-4 py-2">Buy Now</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="price-content text-center">
+                            <h4 class="p-3">Developer</h4>
+                            <ul class="py-3">
+                                <sup class="text-warning">$</sup>
+                                <span class="text-warning">29</span>
+                                <li class="d-inline">/month</li>
+                                <li class="my-2">Aida dere</li>
+                                <li class="my-2">Nec feugiat nisl</li>
+                                <li class="my-2">Nulla at volutpat dola</li>
+                                <li class="my-2">Pharetra massa</li>
+                                <li class="my-2">Massa ultricies mi</li>
+                            </ul>
+                            <div class="price-btn p-2">
+                                <button type="button" class="btn btn-outline-secondary px-4 py-2">Buy Now</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="price-content text-center">
+                            <h4 class="p-3">Ultimate</h4>
+                            <ul class="py-3">
+                                <sup class="text-warning">$</sup>
+                                <span class="text-warning">49</span>
+                                <li class="d-inline">/month</li>
+                                <li class="my-2">Aida dere</li>
+                                <li class="my-2">Nec feugiat nisl</li>
+                                <li class="my-2">Nulla at volutpat dola</li>
+                                <li class="my-2">Pharetra massa</li>
+                                <li class="my-2">Massa ultricies mi</li>
+                            </ul>
+                            <div class="price-btn p-2">
+                                <button type="button" class="btn btn-outline-secondary px-4 py-2">Buy Now</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Pricing End  -->
+
+
+        <!-- FAQ Start  -->
+        <section>
+            <div class="container mt-5">
+                <div id="parent">
+                    <div class="accordion ">
+                        <div class="accordion-item">
+                            <div class="accordion-header">
+                                <button type="button" class="accordion-button" data-bs-toggle="collapse" data-bs-target="#Que-1">Non consectetur a erat nam at lectus urna duis?</button>
+                            </div>
+                            <div class="accordion-body collapse show" id="Que-1" data-bs-parent="#parent">
+                                <p>Feugiat pretium nibh ipsum consequat. Tempus iaculis urna id volutpat lacus laoreet non curabitur gravida. Venenatis lectus magna fringilla urna porttitor rhoncus dolor purus non.</p>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <div class="accordion-header">
+                                <button type="button" class="accordion-button" data-bs-toggle="collapse" data-bs-target="#Que-2">Feugiat scelerisque varius morbi enim nunc?</button>
+                            </div>
+                            <div class="accordion-body collapse collapse" id="Que-2" data-bs-parent="#parent">
+                                <p>Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi. Id interdum velit laoreet id donec ultrices. Fringilla phasellus faucibus scelerisque eleifend donec pretium. Est pellentesque elit ullamcorper dignissim. Mauris ultrices eros in cursus turpis massa tincidunt dui.</p>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <div class="accordion-header">
+                                <button type="button" class="accordion-button" data-bs-toggle="collapse" data-bs-target="#Que-3">Dolor sit amet consectetur adipiscing elit?</button>
+                            </div>
+                            <div class="accordion-body collapse collapse" id="Que-3" data-bs-parent="#parent">
+                                <p>Eleifend mi in nulla posuere sollicitudin aliquam ultrices sagittis orci. Faucibus pulvinar elementum integer enim. Sem nulla pharetra diam sit amet nisl suscipit. Rutrum tellus pellentesque eu tincidunt. Lectus urna duis convallis convallis tellus. Urna molestie at elementum eu facilisis sed odio morbi quis</p>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <div class="accordion-header">
+                                <button type="button" class="accordion-button" data-bs-toggle="collapse" data-bs-target="#Que-4">Tempus quam pellentesque nec nam aliquam sem et tortor consequat?</button>
+                            </div>
+                            <div class="accordion-body collapse collapse" id="Que-4" data-bs-parent="#parent">
+                                <p>Molestie a iaculis at erat pellentesque adipiscing commodo. Dignissim suspendisse in est ante in. Nunc vel risus commodo viverra maecenas accumsan. Sit amet nisl suscipit adipiscing bibendum est. Purus gravida quis blandit turpis cursus in.</p>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <div class="accordion-header">
+                                <button type="button" class="accordion-button" data-bs-toggle="collapse" data-bs-target="#Que-5">Tortor vitae purus faucibus ornare. Varius vel pharetra vel turpis nunc eget lorem dolor?</button>
+                            </div>
+                            <div class="accordion-body collapse collapse" id="Que-5" data-bs-parent="#parent">
+                                <p>Laoreet sit amet cursus sit amet dictum sit amet justo. Mauris vitae ultricies leo integer malesuada nunc vel. Tincidunt eget nullam non nisi est sit amet. Turpis nunc eget lorem dolor sed. Ut venenatis tellus in metus vulputate eu scelerisque.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- FAQ End  -->
+
+
+        <!-- Contact Start  -->
+        <section>
+            <div class="container">
+                <div class="contact-title text-center mt-5">
+                    <h2 class="position-relative">Contact</h2>
+                    <p class="m-5">Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum
+                        quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit
+                        suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+                </div>
+                <div class="row text-center">
+                    <div class="col-lg-6 col-md-12">
+                        <div class="address-content py-4">
+                            <i class="ri-map-pin-line p-3"></i>
+                            <h3 class="mt-3">Our Address</h3>
+                            <p>A108 Adam Street, New York, NY 535022</p>
+                        </div>
+                        <div class="row mt-4">
+                            <div class="col-lg-6 col-md-6">
+                                <div class="email-content py-4">
+                                    <i class="ri-mail-line p-3"></i>
+                                    <h3 class="mt-3">Email Us</h3>
+                                    <p>info@example.com <br> contact@example.com</p>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-md-6">
+                                <div class="call-content py-4">
+                                    <i class="ri-phone-line p-3"></i>
+                                    <h3 class="mt-3">Call Us</h3>
+                                    <a href="#">+1 5589 55488 55</a> <br>
+                                    <a href="#">+1 6678 254445 41</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-12">
+                        <div class="form p-3">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <input type="text" placeholder="Your Name" class="form-control">
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="input-group">
+                                        <input type="text" placeholder="Your Email" class="form-control">
+                                        <span class="input-group-text">@gmail.com</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <input type="text" placeholder="Subject" class="form-control mt-4">
+                            <textarea class="form-control mt-4 pb-5" placeholder="Message"></textarea>
+                            <div class="send-btn d-flex justify-content-center mt-5">
+                                <button type="submit" class="btn btn-outline-warning px-5 py-2 text-dark text-center">Send Message</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Contact End  -->
+
+    </main>
+
+    <Footer class="pt-5 mt-2 footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-sm-6">
+                    <div class="contact-content">
+                        <h3>Baker</h3>
+                        <p>A108 Adam Street <br>New York, NY 535022 <br>United States</p>
+                        <p class="line"><span>Phone:</span>+1 5589 55488 55</p>
+                        <p class="line"><span>Email:</span>info@example.com</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6">
+                    <div class="link-title">
+                        <h4 class="mb-4">Useful Links</h4>
+                    </div>
+                    <div class="link-content">
+                        <ul>
+                            <li class="d-flex align-items-center mb-2"><i class="ri-arrow-right-s-fill me-2"></i><a href="#">Home</a></li>
+                            <li class="d-flex align-items-center mb-2"><i class="ri-arrow-right-s-fill me-2"></i><a href="#">About</a></li>
+                            <li class="d-flex align-items-center mb-2"><i class="ri-arrow-right-s-fill me-2"></i><a href="#">Service</a></li>
+                            <li class="d-flex align-items-center mb-2"><i class="ri-arrow-right-s-fill me-2"></i><a href="#">Terms Of Service</a></li>
+                            <li class="d-flex align-items-center mb-2"><i class="ri-arrow-right-s-fill me-2"></i><a href="#">Privacy Policy</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6">
+                    <div class="footer3-title">
+                        <h4 class="mb-4">Our Services</h4>
+                    </div>
+                    <div class="footer3-content">
+                        <ul>
+                            <li class="d-flex align-items-center mb-2"><i class="ri-arrow-right-s-fill me-2"></i><a href="#">Web Design</a></li>
+                            <li class="d-flex align-items-center mb-2"><i class="ri-arrow-right-s-fill me-2"></i><a href="#">Web Development</a></li>
+                            <li class="d-flex align-items-center mb-2"><i class="ri-arrow-right-s-fill me-2"></i><a href="#">Product Mangament</a></li>
+                            <li class="d-flex align-items-center mb-2"><i class="ri-arrow-right-s-fill me-2"></i><a href="#">Marketing</a></li>
+                            <li class="d-flex align-items-center mb-2"><i class="ri-arrow-right-s-fill me-2"></i><a href="#">Graphic Design</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6">
+                    <div class="news-title">
+                        <h4 class="mb-4">Join Our Newsletter</h4>
+                        <p>Tamen quem nulla quae legam multos aute sint culpa legam noster magna</p>
+                        <div class="input-group mb-3">
+                            <input type="text" class="form-control">
+                            <span class="input-group-text bg-warning">Subscribe</span>
+                            <!-- <button type="button" class="btn">Subscribe</button> -->
+                          </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+
+    <section class="copyright py-4">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 col-sm-12">
+                    <div class="copyright-content">
+                        <p>© Copyright <span>Baker</span>. All Rights Reserved <br> Designed by <a href="#">BootstrapMade</a></p>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-sm-12">
+                    <div class="social-icon d-flex justify-content-end ">
+                        <a href="#" class="me-2 text-secondary"><i class="ri-twitter-fill"></i></a>
+                        <a href="#" class="me-2 text-secondary"><i class="ri-facebook-fill"></i></a>
+                        <a href="#" class="me-2 text-secondary"><i class="ri-instagram-line"></i></a>
+                        <a href="#" class="me-2 text-secondary"><i class="ri-skype-fill"></i></a>
+                        <a href="#" class="me-2 text-secondary"><i class="ri-linkedin-fill"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    </Footer>
+
+    <script src="js/bootstrap.bundle.min.js" type="text/javascript"></script>
+</body>
+
+</html>

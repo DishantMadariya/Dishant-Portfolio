@@ -1,0 +1,38 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --theme-color:#F6C90E;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+}
+a{
+    display: inline-block !important;
+}
+.text-theme{
+    color: var(--theme-color) !important;
+}
+.border-theme{
+    border-color: var(--theme-color) !important;
+}
+.py{
+    padding: 100px 0;
+}
+header{
+    z-index: 9;
+    top: 60%;
+}
+.text{
+    top: 40%;
+    margin-left: 7px;
+}
+.banner img{
+    object-fit: cover;
+    object-position: top;
+}
+#particles-js{
+    mix-blend-mode: screen;
+}

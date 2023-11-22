@@ -1,0 +1,34 @@
+<h1> Contact Detail</h1>
+<a href="/contact" class="button">Contact Page</a>
+<style>
+    .button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #F6C90E;
+            color: #fff;
+            text-decoration: none;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: transform 0.2s ease;
+        }
+</style>
+<table border="1">
+    <tr style="background-color: #d0b95e; font-weight: bold; text-align: center;">
+        <td>No</td>
+        <td>Name</td>
+        <td>Email</td>
+        <td>Subject</td>
+        <td>Message</td>
+    </tr>
+
+   <% var i = 1; for (var v of messaging) { %>
+<tr style="background-color: #F6C90E; color: whitesmoke; font-weight: 700;">
+    <td style="padding: 6px;"><%= i %></td>
+    <td style="padding: 6px;"><%= v.name %></td>
+    <td style="padding: 6px;"><%= v.email %></td>
+    <td style="padding: 6px;"><%= v.subject %></td>
+    <td style="padding: 6px;"><%= v.message %></td>
+</tr>
+<% i++; } %>
+</table>

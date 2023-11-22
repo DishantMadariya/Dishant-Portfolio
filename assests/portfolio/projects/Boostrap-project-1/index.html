@@ -1,0 +1,1081 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width , initial-scale=1.0">
+    <title>Boostrap</title>
+    <link rel="icon" href="images/fav-icon.png" type="icon">
+    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+    <link rel="stylesheet" href="remixicon/remixicon.css" type="text/css">
+    <link rel="stylesheet" href="fonts/stylesheet.css" type="text/css">
+    <link rel="stylesheet" href="css/all.min.css" type="text/css">
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <link rel="stylesheet" href="css/animate.css" type="text/css">
+</head>
+
+<body>
+    <!-- Header-start -->
+    <!-- Sign In -->
+    <div class="modal fade" id="modal" data-bs-backdrop="false">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <div class="logo px-2 ">
+                        <a href="#" class="text-dark nav-link">BIZ PAGE</a>
+                    </div>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body dark-color bg-gradient text-white">
+                   <form>
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <input type="text" placeholder="First Name" class="px-3 py-1 w-100 my-1">
+                        </div>
+                        <div class="col-lg-6">
+                            <input type="text" placeholder="Last Name" class="px-3 py-1 w-100 my-1">
+                        </div>
+                    </div>
+                    <input type="email" placeholder="Email" class="px-3 py-1 w-100 my-1">
+                    <input type="password" placeholder="password" class="px-3 py-1 w-100 my-1">
+                   </form> 
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn bg-warning bg-gradient btn-outline-light" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn bg-danger bg-gradient btn-outline-light" data-bs-target="#vasu" data-bs-toggle="modal" >Sign In</button>
+                    <button type="button" class="btn bg-success bg-gradient btn-outline-light" data-bs-target="#Login" data-bs-toggle="modal">Login</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Login -->
+    <div class="modal fade" id="Login" data-bs-backdrop="false">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <div class="logo px-2 ">
+                        <a href="#" class="text-dark nav-link">BIZ PAGE</a>
+                    </div>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body dark-color bg-gradient text-white">
+                   <form>
+                    <input type="text" placeholder="Username" class="px-3 py-1 w-100 my-1">
+                    <input type="password" placeholder="password" class="px-3 py-1 w-100 my-1">
+                   </form> 
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn bg-warning bg-gradient btn-outline-light" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn bg-danger bg-gradient btn-outline-light" data-bs-target="#modal" data-bs-toggle="modal" >Sign In</button>
+                    <button type="button" class="btn bg-success bg-gradient btn-outline-light" data-bs-target="#vasu" data-bs-toggle="modal">Login</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Thank You -->
+    <div class="modal fade" id="vasu" data-bs-backdrop="false">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <div class="logo px-2 ">
+                        <a href="#" class="text-dark nav-link">BIZ PAGE</a>
+                    </div>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body dark-color bg-gradient text-white">
+                    <p>Thank You For Visiting Our Website....<i class="fa-regular fa-face-smile text-white"></i></p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn bg-warning bg-gradient btn-outline-light" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn bg-success bg-gradient btn-outline-light" data-bs-target="#Login" data-bs-toggle="modal">Log In</button>
+                    <button type="button" class="btn bg-danger bg-gradient btn-outline-light" data-bs-target="#modal" data-bs-toggle="modal">Sign In</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <header class="py-3 navbar navbar-expand-lg position-absolute top-0 start-0 w-100">
+        <div class="container">
+            <div class="logo text-white">
+                <h2  class="border-start border-5 border-theme px-2"><a href="#" class="nav-link py-1">BIZ PAGE</a></h2>
+            </div>
+            <button class="navbar-toggler border-white border-3" type="button" data-bs-toggle="collapse"data-bs-target="#abc">
+                <i class="ri-menu-line text-white"></i>
+            </button>
+            <nav class="collapse navbar-collapse justify-content-end" id="abc">
+                <ul class="navbar-nav">
+                    <li><a href="#" class="nav-link fs-6 fw-semibold mx-2">HOME</a></li>
+                    <li><a href="#" class="nav-link text-white fs-6 fw-semibold mx-2">ABOUT</a></li>
+                    <li><a href="#" class="nav-link text-white fs-6 fw-semibold mx-2">SERVICES</a></li>
+                    <li class="submenu position-relative">
+                        <a href="#" class="nav-link text-white fs-6 fw-semibold mx-2 d-flex align-center">DROPDOWN<i class="ri-arrow-down-s-line"></i></a>
+                        <div class="sub-menu position-absolute">
+                            <ul class="navbar-nav flex-column ">
+                                <li><a href="#" class="nav-link text-secondary fw-semibold">Drop Down 1</a></li>
+                                <li class="drop position-relative">
+                                    <a href="#"class="nav-link text-secondary fw-semibold d-flex align-center justify-content-between">Deep Drop Down<i class="ri-arrow-right-s-fill"></i></a>
+                                    <div class="drop-menu position-absolute">
+                                        <ul class="navbar-nav flex-column ">
+                                            <li><a href="#" class="nav-link text-secondary px-3 fw-semibold">Deep Drop 1</a></li>
+                                            <li><a href="#" class="nav-link text-secondary px-3 fw-semibold">Deep Drop 2</a></li>
+                                            <li><a href="#" class="nav-link text-secondary px-3 fw-semibold">Deep Drop 3</a></li>
+                                            <li><a href="#" class="nav-link text-secondary px-3 fw-semibold">Deep Drop 4</a></li>
+                                            <li><a href="#" class="nav-link text-secondary px-3 fw-semibold">Deep Drop 5</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li><a href="#" class="nav-link text-secondary fw-semibold">Drop Down 2</a></li>
+                                <li><a href="#" class="nav-link text-secondary fw-semibold">Drop Down 3</a></li>
+                                <li><a href="#" class="nav-link text-secondary fw-semibold">Drop Down 4</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li><a href="#" class="nav-link text-white fs-6 fw-semibold mx-2">PORTFOLIO</a></li>
+                    <li><a href="#" class="nav-link text-white fs-6 fw-semibold mx-2">BLOG</a></li>
+                    <li><a href="#" class="nav-link text-white fs-6 fw-semibold mx-2 d-inline-block btn bg-theme btn-outline-light px-2" data-bs-toggle="modal" data-bs-target="#modal">Sign up</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <!-- Header-end -->
+    <main>
+        <!-- Banner-start -->
+        <section>
+            <div class="carousel slide carousel-fade" data-bs-ride="carousel" id="dishant">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#dishant" data-bs-slide-to="0" class="active"></button>
+                    <button type="button" data-bs-target="#dishant" data-bs-slide-to="1"></button>
+                    <button type="button" data-bs-target="#dishant" data-bs-slide-to="2"></button>
+                    <button type="button" data-bs-target="#dishant" data-bs-slide-to="3"></button>
+                    <button type="button" data-bs-target="#dishant" data-bs-slide-to="4"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="over position-relative">
+                            <img src="images/1.jpg" alt="banner" title="i1" width="100%" height="800px">
+                        </div>
+                        <div class="position-absolute top-50 start-50 translate-middle text-center text-white">
+                            <h1 class="fw-semibold wow fadeInDown">We Are professional</h1>
+                            <p class="mt-4 mb-5 lh-base wow fadeInUp">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                            <a href="#" class="btn btn-theme rounded-pill text-white wow fadeInUp">Get Strated</a>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="over position-relative">
+                            <img src="images/2.jpg" alt="banner" title="i2" width="100%" height="800px">
+                        </div>
+                        <div class="position-absolute top-50 start-50 translate-middle text-center text-white">
+                            <h1 class="fw-semibold wow fadeInDown">At vero eos et accusamus</h1>
+                            <p class="mt-4 mb-5 lh-base wow fadeInUp">Nam libero tempore, cum soluta nobis est eligendi optio cumque
+                                nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda
+                                est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut.
+                            </p>
+                            <a href="#" class="btn btn-theme rounded-pill text-white wow fadeInUp">Get Strated</a>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="over position-relative">
+                            <img src="images/3.jpg" alt="banner" title="i3" width="100%" height="800px">
+                        </div>
+                        <div class="position-absolute top-50 start-50 translate-middle text-center text-white">
+                            <h1 class="fw-semibold wow fadeInDown">Temporibus autem quibusdam</h1>
+                            <p class="mt-4 mb-5 lh-base wow fadeInUp">Beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem
+                                quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos
+                                qui ratione voluptatem sequi nesciunt omnis iste natus error sit voluptatem accusantium.
+                            </p>
+                            <a href="#" class="btn btn-theme rounded-pill text-white wow fadeInUp">Get Strated</a>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="over position-relative">
+                            <img src="images/4.jpg" alt="banner" title="i3" width="100%" height="800px">
+                        </div>
+                        <div class="position-absolute top-50 start-50 translate-middle text-center text-white">
+                            <h1 class="fw-semibold wow fadeInDown">Nam libero tempore</h1>
+                            <p class="mt-4 mb-5 lh-base wow fadeInUp">Neque porro quisquam est, qui dolorem ipsum quia dolor sit
+                                amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut
+                                labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis
+                                nostrum.</p>
+                            <a href="#" class="btn btn-theme rounded-pill text-white wow fadeInUp">Get Strated</a>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="over position-relative">
+                            <img src="images/5.jpg" alt="banner" title="i5" width="100%" height="800px">
+                        </div>
+                        <div class="position-absolute top-50 start-50 translate-middle text-center text-white">
+                            <h1 class="fw-semibold wow fadeInDown">Magnam aliquam quaerat</h1>
+                            <p class="mt-4 mb-5 lh-base wow fadeInUp">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                            <a href="#" class="btn btn-theme rounded-pill text-white wow fadeInUp">Get Strated</a>
+                        </div>
+                    </div>
+                </div>
+                <button type="button" class="carousel-control-prev" data-bs-target="#dishant" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </button>
+                <button type="button" class="carousel-control-next" data-bs-target="#dishant" data-bs-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </button>
+            </div>
+        </section>
+        <!-- Banner-end -->
+        <!-- Feature-start -->
+        <section>
+            <div class="featured-services dark-color">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-4">
+                            <div class="featured-content py-4 px-3 dark-color text-white">
+                                <i class="ri-briefcase-line theme-color"></i><br>
+                                <h4 class="d-inline-block"><a href="#" class="nav-link fs-5 my-3">Lorem Ipsum Delino</a>
+                                </h4>
+                                <p class="mb-0">Voluptatum deleniti atque corrupti quos dolores et quas excepturi occaecati cupiditate non provident</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="featured-content py-4 px-3 dark-color bg-gradient text-white">
+                                <i class="fa-regular fa-rectangle-list theme-color"></i><br>
+                                <h4 class="d-inline-block"><a href="#" class="nav-link fs-5 my-3">Dolor Sitema</a></h4>
+                                <p class="mb-0">Minim veniam, quis nostrud exercitation laboris nisi ut aliquip ex ea commodo consequat tarad limino ata</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="featured-content py-4 px-3 dark-color text-white">
+                                <i class="fa-solid fa-binoculars theme-color"></i><br>
+                                <h4 class="d-inline-block"><a href="#" class="nav-link fs-5 my-3">Sed ut perspiciatis</a></h4>
+                                <p class="mb-0">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
+                                    dolore eu fugiat nulla pariatur</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Featured-end -->
+        <!-- About-start -->
+        <section class="about w-100 pt-5 pb-4">
+            <div class="container">
+                <div class="about-title text-center wow fadeInUp">
+                    <h2 class=" position-relative pb-3 mb-4">ABOUT US</h2>
+                    <P class="text-secondary pb-5 mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                        eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+                        nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</P>
+                </div>
+                <div class="row wow fadeInUp" data-wow-delay="0.5">
+                    <div class="col-lg-4">
+                        <div class="card mb-3 border-0 shadow-sm">
+                            <div class="images position-relative">
+                                <img src="images/about-mission.jpg" class="img-fluid" alt="img" title="Our Mission">
+                                <div
+                                    class="icons position-absolute top-100 start-50 translate-middle d-flex justify-content-center align-items-center border border-4 border-white rounded-circle">
+                                    <i class="fa-solid fa-chart-simple fs-3 text-light"></i>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <h5 class="mt-4 fw-semibold text-center"><a href="#" class="nav-link">Our Mission</a>
+                                </h5>
+                                <p class="text-left p-2 pt-0 mb-0 fw-light">Lorem ipsum dolor sit amet, consectetur
+                                    elit, sed do eiusmod tempor ut labore et dolore magna aliqua. Ut enim ad minim
+                                    veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                                    consequat.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="card mb-3 border-0 shadow-sm">
+                            <div class="images position-relative">
+                                <img src="images/about-plan.jpg" class="img-fluid" alt="img" title="Our Plan">
+                                <div
+                                    class="icons position-absolute top-100 start-50 translate-middle d-flex justify-content-center align-items-center border border-4 border-white rounded-circle">
+                                    <i class="ri-sun-line fs-3 text-white"></i>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <h5 class="mt-4 fw-semibold text-center"><a href="#" class="nav-link">Our Plan</a></h5>
+                                <p class="text-left p-2 pt-0 mb-0 fw-light">Sed ut perspiciatis unde omnis iste natus
+                                    error sit voluptatem doloremque laudantium, totam rem aperiam, eaque ipsa quae ab
+                                    illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="card mb-3 border-0 shadow-sm">
+                            <div class="images position-relative">
+                                <img src="images/about-vision.jpg" class="img-fluid" alt="img" title="Our Vision">
+                                <div
+                                    class="icons position-absolute top-100 start-50 translate-middle d-flex justify-content-center align-items-center border border-4 border-white rounded-circle">
+                                    <i class="ri-calendar-2-line fs-3 text-light"></i>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <h5 class="mt-4 fw-semibold text-center"><a href="#" class="nav-link">Our Vision</a>
+                                </h5>
+                                <p class="text-left p-2 pt-0 mb-0 fw-light">Nemo enim ipsam voluptatem quia voluptas
+                                    sit aut odit aut fugit, sed quia magni dolores eos qui ratione voluptatem sequi
+                                    nesciunt Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- About-End -->
+        <!-- Service-start -->
+        <section class="py">
+            <div class="container">
+                <div class="service-title text-center mb-4 pt-5 wow fadeInUp">
+                    <h2 class="position-relative pb-3 mb-4">SERVICES</h2>
+                    <p class="text-secondary pb-5 mb-4">Laudem latine persequeris id sed, ex fabulas delectus quo. No
+                        vel partiendo abhorreant vituperatoribus, ad pro quaestio laboramus. Ei ubique vivendum pro. At
+                        ius nisl accusam lorenta zanos paradigno tridexa panatarel.</p>
+                </div>
+                <div class="row wow fadeInUp" >
+                    <div class="col-md-6 col-lg-4">
+                        <div class="service-content d-flex mb-4">
+                            <div class="service-icon float-start">
+                                <i class="ri-briefcase-line theme-color"></i>
+                            </div>
+                            <div class="service-text ms-4">
+                                <h4 class="mb-2"><a href="#" class="nav-link">Lorem Ipsum</a></h4>
+                                <p class="text-secondary">Voluptatum deleniti atque corrupti quos dolores et quas molestias
+                                    excepturi sint occaecati cupiditate non provident</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="service-content d-flex mb-4">
+                            <div class="service-icon float-start">
+                                <i class="fa-regular fa-rectangle-list theme-color"></i>
+                            </div>
+                            <div class="service-text ms-4">
+                                <h4 class="mb-2"><a href="#" class="nav-link">Dolor Sitema</a></h4>
+                                <p class="text-secondary">Voluptatum deleniti atque corrupti quos dolores et quas molestias
+                                    excepturi sint occaecati cupiditate non provident</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="service-content d-flex mb-4">
+                            <div class="service-icon float-start">
+                                <i class="fa-solid fa-chart-simple theme-color"></i>
+                            </div>
+                            <div class="service-text ms-4">
+                                <h4 class="mb-2"><a href="#" class="nav-link">Sed ut perspiciatis</a></h4>
+                                <p class="text-secondary">Voluptatum deleniti atque corrupti quos dolores et quas molestias
+                                    excepturi sint occaecati cupiditate non provident</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="service-content d-flex mb-4 wow fadeInUp">
+                            <div class="service-icon float-start">
+                                <i class="fa-solid fa-binoculars theme-color"></i>
+                            </div>
+                            <div class="service-text ms-4">
+                                <h4 class="mb-2"><a href="#" class="nav-link">Magni Dolores</a></h4>
+                                <p class="text-secondary">Voluptatum deleniti atque corrupti quos dolores et quas molestias
+                                    excepturi sint occaecati cupiditate non provident</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="service-content d-flex mb-4 wow fadeInUp">
+                            <div class="service-icon float-start">
+                                <i class="ri-sun-line theme-color"></i>
+                            </div>
+                            <div class="service-text ms-4">
+                                <h4 class="mb-2"><a href="#" class="nav-link">Nemo Enim</a></h4>
+                                <p class="text-secondary">Voluptatum deleniti atque corrupti quos dolores et quas molestias
+                                    excepturi sint occaecati cupiditate non provident</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="service-content d-flex mb-4 wow fadeInUp" >
+                            <div class="service-icon float-start">
+                                <i class="ri-calendar-2-line theme-color"></i>
+                            </div>
+                            <div class="service-text ms-4">
+                                <h4 class="mb-2"><a href="#" class="nav-link">Eiusmod Tempor</a></h4>
+                                <p class="text-secondary">Voluptatum deleniti atque corrupti quos dolores et quas molestias
+                                    excepturi sint occaecati cupiditate non provident</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Service-End -->
+        <!-- Action-start -->
+        <section class="py action">
+            <div class="container">
+                <div class="action-title text-white text-center wow bounceIn">
+                    <h2 class="mb-3 fs-2 fw-semibold">Call To Action</h2>
+                    <p class="mb-5">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+                        fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+                        deserunt mollit anim id est laborum.</p>
+                    <a href="#" class="nav-link btn py-2 px-4 d-inline-block border border-light border-3 rounded-pill">CALL TO ACTION</a>
+                </div>
+            </div>
+        </section>
+        <!-- Action-End -->
+        <!-- Skill-start -->
+        <section class="pt-5 pb-4 wow fadeInUp">
+            <div class="container">
+                <div class="skill-title text-center wow fadeInUp">
+                    <h2 class="position-relative pb-3 mb-4">OUR SKILLS</h2>
+                    <p class="text-secondary pb-5 mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                        eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+                        nostrud exercitation ullamco laboris nisi ut aliquip</p>
+                </div>
+                <div class="skill-content mb-4">
+                    <div class="html bg-secondary bg-opacity-25 w-100">
+                        <div class="html bg-success d-flex align-items-center justify-content-between text-white px-3 wow slideInLeft" width="100%">
+                            <span>HTML</span>
+                            <p class="mb-0">100%</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-content mb-4">
+                    <div class="html bg-secondary bg-opacity-25" width="100%">
+                        <div class="css-90 bg-info d-flex align-items-center justify-content-between text-white px-3 wow slideInLeft">
+                            <span>CSS</span>
+                            <p class="mb-0">90%</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-content mb-4">
+                    <div class="html bg-secondary bg-opacity-25" width="100%">
+                        <div class="js-75 bg-warning d-flex align-items-center justify-content-between text-white px-3 wow slideInLeft">
+                            <span>JAVASCRIPT</span>
+                            <p class="mb-0">75%</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-content mb-4">
+                    <div class="html bg-secondary bg-opacity-25" width="100%">
+                        <div class="ps-55 bg-danger d-flex align-items-center justify-content-between text-white px-3 wow slideInLeft">
+                            <span>PHOTOSHOP</span>
+                            <p class="mb-0">55%</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Skill-End -->
+        <!-- Facts-start -->
+        <section class="py fact">
+            <div class="container">
+                <div class="fact-title text-center wow fadeInUp">
+                    <h2 class="position-relative pb-1 mb-2">FACTS</h2>
+                    <p class="text-secondary pb-3 mb-4">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque</p>
+                </div>
+                <div class="row wow fadeInUp">
+                    <div class="col-md-6 col-lg-3 ">
+                        <div class="fact-content text-center">
+                            <h3 class="fw-semibold theme-color">232</h3>
+                            <p class="fw-light mb-3">Clients</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                        <div class="fact-content text-center">
+                            <h3 class="fw-semibold theme-color">421</h3>
+                            <p class="fw-light mb-3">Projects</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                        <div class="fact-content text-center">
+                            <h3 class="fw-semibold theme-color">1364</h3>
+                            <p class="fw-light mb-3">Hours Of Support</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                        <div class="fact-content text-center">
+                            <h3 class="fw-semibold theme-color">38</h3>
+                            <p class="fw-light mb-3">Hard Workers</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="facts-img  text-center wow fadeInUp" data-wow-delay="0.3s">
+                    <img src="images/facts-img.png" class="img-fluid" alt="fact">
+                </div>
+            </div>
+        </section>
+        <!-- Facts-end -->
+        <!-- Portfolio-start -->
+        <section class="py portfolio">
+            <div class="container">
+                <div class="portfolio-title text-center wow fadeInUp">
+                    <h2 class="position-relative pb-3 mb-4">OUR PORTFOLIO</h2>
+                </div>
+                <div class="row">
+                    <div class="col-lg-12 wow fadeInUp">
+                        <ul class="pf d-flex list-unstyled texr-center justify-content-center">
+                            <li class="border px-3 py-2 m-2 btn-theme bg-opacity-50 text-light fw-light rounded-2 lh-base">ALL</li>
+                            <li class="border px-3 py-2 m-2 bg-light bg-opacity-50 text-dark fw-light rounded-2 lh-base">APP</li>
+                            <li class="border px-3 py-2 m-2 bg-light bg-opacity-50 text-dark fw-light rounded-2 lh-base">CARD</li>
+                            <li class="border px-3 py-2 m-2 bg-light bg-opacity-50 text-dark fw-light rounded-2 lh-base"> WEB</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="row wow fadeInUp">
+                    <div class="col-lg-4">
+                        <div class="pf-item py-4 wow fadeInUp">
+                            <div class="pf-img position-relative overflow-hidden">
+                                <img src="images/app1.jpg" class="img-fluid" alt="app1">
+                                <div class="icons top-50 start-50 translate-middle d-flex">
+                                    <a href="#" class="nav-link"><i class="ri-add-line border p-2 bg-light rounded-circle text-dark i1 fs-4"></i></a>
+                                    <a href="#" class="nav-link"><i class="ri-links-fill border p-2 bg-light rounded-circle text-dark i2 fs-4"></i></a>
+                                </div>
+                            </div>
+                            <div class="pf-content text-center py-3">
+                                <h4><a href="#" class="nav-link d-inline">App 1</a></h4>
+                                <p class="text-uppercase">App</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="pf-item py-4 wow fadeInUp">
+                            <div class="pf-img position-relative overflow-hidden">
+                                <img src="images/web3.jpg" class="img-fluid" alt="app1">
+                                <div class="icons top-50 start-50 translate-middle d-flex">
+                                    <a href="#" class="nav-link"><i class="ri-add-line border p-2 bg-light rounded-circle text-dark fs-4 i1"></i></a>
+                                    <a href="#" class="nav-link"><i class="ri-links-fill border p-2 bg-light rounded-circle text-dark fs-4 i2"></i></a>
+                                </div>
+                            </div>
+                            <div class="pf-content text-center py-3">
+                                <h4><a href="#" class="nav-link d-inline">Web 3</a></h4>
+                                <p class="text-uppercase">web</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="pf-item py-4 wow fadeInUp">
+                            <div class="pf-img position-relative overflow-hidden">
+                                <img src="images/app2.jpg" class="img-fluid" alt="app1">
+                                <div class="icons top-50 start-50 translate-middle d-flex">
+                                    <a href="#" class="nav-link"><i class="ri-add-line border p-2 bg-light rounded-circle text-dark fs-4 i1"></i></a>
+                                    <a href="#" class="nav-link"><i class="ri-links-fill border p-2 bg-light rounded-circle text-dark fs-4 i2"></i></a>
+                                </div>
+                            </div>
+                            <div class="pf-content text-center py-3">
+                                <h4><a href="#" class="nav-link d-inline">App 2</a></h4>
+                                <p class="text-uppercase">App</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="pf-item py-4 wow fadeInUp">
+                            <div class="pf-img position-relative overflow-hidden">
+                                <img src="images/card2.jpg" class="img-fluid" alt="app1">
+                                <div class="icons top-50 start-50 translate-middle d-flex">
+                                    <a href="#" class="nav-link"><i class="ri-add-line border p-2 bg-light rounded-circle text-dark fs-4 i1"></i></a>
+                                    <a href="#" class="nav-link"><i class="ri-links-fill border p-2 bg-light rounded-circle text-dark fs-4 i2"></i></a>
+                                </div>
+                            </div>
+                            <div class="pf-content text-center py-3">
+                                <h4><a href="#" class="nav-link d-inline">Card 2</a></h4>
+                                <p class="text-uppercase">card</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="pf-item py-4 wow fadeInUp">
+                            <div class="pf-img position-relative overflow-hidden">
+                                <img src="images/web2.jpg" class="img-fluid" alt="app1">
+                                <div class="icons top-50 start-50 translate-middle d-flex">
+                                    <a href="#" class="nav-link"><i class="ri-add-line border p-2 bg-light rounded-circle text-dark fs-4 i1"></i></a>
+                                    <a href="#" class="nav-link"><i class="ri-links-fill border p-2 bg-light rounded-circle text-dark fs-4 i2"></i></a>
+                                </div>
+                            </div>
+                            <div class="pf-content text-center py-3">
+                                <h4><a href="#" class="nav-link d-inline">Web 2</a></h4>
+                                <p class="text-uppercase">web</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="pf-item py-4 wow fadeInUp">
+                            <div class="pf-img position-relative overflow-hidden">
+                                <img src="images/app3.jpg" class="img-fluid" alt="app1">
+                                <div class="icons top-50 start-50 translate-middle d-flex">
+                                    <a href="#" class="nav-link"><i class="ri-add-line border p-2 bg-light rounded-circle text-dark fs-4 i1"></i></a>
+                                    <a href="#" class="nav-link"><i class="ri-links-fill border p-2 bg-light rounded-circle text-dark fs-4 i2"></i></a>
+                                </div>
+                            </div>
+                            <div class="pf-content text-center py-3">
+                                <h4><a href="#" class="nav-link d-inline">App 3</a></h4>
+                                <p class="text-uppercase">App</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="pf-item py-4 wow fadeInUp">
+                            <div class="pf-img position-relative overflow-hidden">
+                                <img src="images/card1.jpg" class="img-fluid" alt="app1">
+                                <div class="icons top-50 start-50 translate-middle d-flex">
+                                    <a href="#" class="nav-link"><i class="ri-add-line border p-2 bg-light rounded-circle text-dark fs-4 i1"></i></a>
+                                    <a href="#" class="nav-link"><i class="ri-links-fill border p-2 bg-light rounded-circle text-dark fs-4 i2"></i></a>
+                                </div>
+                            </div>
+                            <div class="pf-content text-center py-3">
+                                <h4><a href="#" class="nav-link d-inline">Card 1</a></h4>
+                                <p class="text-uppercase">card</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="pf-item py-4 wow fadeInUp">
+                            <div class="pf-img position-relative overflow-hidden">
+                                <img src="images/card3.jpg" class="img-fluid" alt="app1">
+                                <div class="icons top-50 start-50 translate-middle d-flex">
+                                    <a href="#" class="nav-link"><i class="ri-add-line border p-2 bg-light rounded-circle text-dark fs-4 i1"></i></a>
+                                    <a href="#" class="nav-link"><i class="ri-links-fill border p-2 bg-light rounded-circle text-dark fs-4 i2"></i></a>
+                                </div>
+                            </div>
+                            <div class="pf-content text-center py-3">
+                                <h4><a href="#" class="nav-link d-inline">Card 3</a></h4>
+                                <p class="text-uppercase">card</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="pf-item py-4 wow fadeInUp">
+                            <div class="pf-img position-relative overflow-hidden">
+                                <img src="images/web1.jpg" class="img-fluid" alt="app1">
+                                <div class="icons top-50 start-50 translate-middle d-flex">
+                                    <a href="#" class="nav-link"><i class="ri-add-line border p-2 bg-light rounded-circle text-dark fs-4 i1"></i></a>
+                                    <a href="#" class="nav-link"><i class="ri-links-fill border p-2 bg-light rounded-circle text-dark fs-4 i2"></i></a>
+                                </div>
+                            </div>
+                            <div class="pf-content text-center py-3">
+                                <h4><a href="#" class="nav-link d-inline">Web 1</a></h4>
+                                <p class="text-uppercase">web</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Portfolio-end -->
+        <!-- Clients-start -->
+        <section class="py clients wow bounceIn">
+            <div class="container">
+                <div class="clients-title text-center">
+                    <h2 class="position-relative pb-1 mb-2">OUR CLIENTS</h2>
+                </div>
+                <div class="carousel slide carousel-fade" data-bs-ride="carousel" id="client">
+                    <div class="carousel-inner">
+                        <div class="carousel-item pb-5 active">
+                            <div class="row">
+                                <div class="col-md-4 col-lg-2">
+                                    <div class="clients-img mt-5 text-center">
+                                        <img src="images/client-1.png" alt="client-1" class="img-fluid">
+                                    </div>
+                                </div>
+                                <div class="col-md-4 col-lg-2">
+                                    <div class="clients-img mt-5 text-center">
+                                        <img src="images/client-2.png" alt="client-1" class="img-fluid">
+                                    </div>
+                                </div>
+                                <div class="col-md-4 col-lg-2">
+                                    <div class="clients-img mt-5 text-center">
+                                        <img src="images/client-3.png" alt="client-1" class="img-fluid">
+                                    </div>
+                                </div>
+                                <div class="col-md-4 col-lg-2">
+                                    <div class="clients-img mt-5 text-center">
+                                        <img src="images/client-4.png" alt="client-1" class="img-fluid">
+                                    </div>
+                                </div>
+                                <div class="col-md-4 col-lg-2">
+                                    <div class="clients-img mt-5 text-center">
+                                        <img src="images/client-5.png" alt="client-1" class="img-fluid">
+                                    </div>
+                                </div>
+                                <div class="col-md-4 col-lg-2">
+                                    <div class="clients-img mt-5 text-center">
+                                        <img src="images/client-6.png" alt="client-1" class="img-fluid">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item pb-5">
+                            <div class="row">
+                                <div class="col-md-4 col-lg-2">
+                                    <div class="clients-img mt-5 text-center">
+                                        <img src="images/client-1.png" alt="client-1" class="img-fluid">
+                                    </div>
+                                </div>
+                                <div class="col-md-4 col-lg-2">
+                                    <div class="clients-img mt-5 text-center">
+                                        <img src="images/client-2.png" alt="client-1" class="img-fluid">
+                                    </div>
+                                </div>
+                                <div class="col-md-4 col-lg-2">
+                                    <div class="clients-img mt-5 text-center">
+                                        <img src="images/client-3.png" alt="client-1" class="img-fluid">
+                                    </div>
+                                </div>
+                                <div class="col-md-4 col-lg-2">
+                                    <div class="clients-img mt-5 text-center">
+                                        <img src="images/client-4.png" alt="client-1" class="img-fluid">
+                                    </div>
+                                </div>
+                                <div class="col-md-4 col-lg-2">
+                                    <div class="clients-img mt-5 text-center">
+                                        <img src="images/client-5.png" alt="client-1" class="img-fluid">
+                                    </div>
+                                </div>
+                                <div class="col-md-4 col-lg-2">
+                                    <div class="clients-img mt-5 text-center">
+                                        <img src="images/client-6.png" alt="client-1" class="img-fluid">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item pb-5">
+                            <div class="row">
+                                <div class="col-md-4 col-lg-2">
+                                    <div class="clients-img mt-5 text-center">
+                                        <img src="images/client-1.png" alt="client-1" class="img-fluid">
+                                    </div>
+                                </div>
+                                <div class="col-md-4 col-lg-2">
+                                    <div class="clients-img mt-5 text-center">
+                                        <img src="images/client-2.png" alt="client-1" class="img-fluid">
+                                    </div>
+                                </div>
+                                <div class="col-md-4 col-lg-2">
+                                    <div class="clients-img mt-5 text-center">
+                                        <img src="images/client-3.png" alt="client-1" class="img-fluid">
+                                    </div>
+                                </div>
+                                <div class="col-md-4 col-lg-2">
+                                    <div class="clients-img mt-5 text-center">
+                                        <img src="images/client-4.png" alt="client-1" class="img-fluid">
+                                    </div>
+                                </div>
+                                <div class="col-md-4 col-lg-2">
+                                    <div class="clients-img mt-5 text-center">
+                                        <img src="images/client-5.png" alt="client-1" class="img-fluid">
+                                    </div>
+                                </div>
+                                <div class="col-md-4 col-lg-2">
+                                    <div class="clients-img mt-5 text-center">
+                                        <img src="images/client-6.png" alt="client-1" class="img-fluid">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-indicators top-100">
+                        <button type="button" data-bs-target="#client" data-bs-slide-to="0" class="active"></button>
+                        <button type="button" data-bs-target="#client" data-bs-slide-to="1"></button>
+                        <button type="button" data-bs-target="#client" data-bs-slide-to="2"></button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Clients-end -->
+        <!-- Testimonial-start -->
+        <section class="py testimonial wow fadeInUp">
+            <div class="container">
+                <div class="tm-title text-center">
+                    <h2 class="position-relative pb-3 mb-4">TESTIMONIALS</h2>
+                </div>
+                <div class="carousel slide" data-bs-ride="carousel" id="archie">
+                    <div class="carousel-inner wow fadeInUp">
+                        <div class="carousel-item active">
+                            <div class="tm-item text-center wow fadeInUp">
+                                <div class="tm-img">
+                                    <img src="images/testimonial-1.jpg" alt="Testimonial" class="rounded-circle border border-4 border-light" width="120px">
+                                </div>
+                                <div class="tm-content">
+                                    <h3 class="pt-2 fw-semibold ">Saul Goodman</h3>
+                                    <h4 class="mb-3 fw-light fs-6 text-secondary">Ceo & Founder</h4>
+                                    <p class="mx-5 mb-5 fst-italic text-secondary"><img src="images/quote-sign-left.png" class="pe-3" alt="left" width="37px"> Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit rhoncus. Accusantium quam, ultricies eget id, aliquam eget nibh et. Maecen aliquam, risus at semper. <img src="images/quote-sign-right.png" class="ps-3" alt="right" width="37px"></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="tm-item text-center wow fadeInUp">
+                                <div class="tm-img">
+                                    <img src="images/testimonial-2.jpg" alt="Testimonial" class="rounded-circle border border-4 border-light" width="120px">
+                                </div>
+                                <div class="tm-content">
+                                    <h3 class="pt-2 fw-semibold ">Sara Wilsson</h3>
+                                    <h4 class="mb-3 fw-normal fs-6 text-secondary">Designer</h4>
+                                    <p class="mx-5 mb-5 fst-italic text-secondary"><img src="images/quote-sign-left.png" class="pe-3" alt="left" width="37px">Quis quorum aliqua sint quem legam fore sunt eram
+                                        irure aliqua veniam tempor noster veniam enim culpa labore duis sunt culpa nulla illum cillum fugiat legam esse veniam culpa fore nisi cillum quid.<img src="images/quote-sign-right.png" class="ps-3" alt="right" width="37px"></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="tm-item text-center wow fadeInUp">
+                                <div class="tm-img">
+                                    <img src="images/testimonial-3.jpg" alt="Testimonial"
+                                        class="rounded-circle border border-4 border-light" width="120px">
+                                </div>
+                                <div class="tm-content">
+                                    <h3 class="pt-2 fw-semibold ">Jena Karlis</h3>
+                                    <h4 class="mb-3 fw-normal fs-6 text-secondary">Store Owner</h4>
+                                    <p class="mx-5 mb-5 fst-italic text-secondary"><img src="images/quote-sign-left.png" class="pe-3" alt="left" width="37px"> Enim nisi quem export duis labore cillum quae magna enim sint quorum nulla quem veniam duis minim tempor labore quem eram duis noster aute amet eram fore quis sint minim.<img src="images/quote-sign-right.png" class="ps-3" alt="right" width="37px"></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="tm-item text-center wow fadeInUp">
+                                <div class="tm-img">
+                                    <img src="images/testimonial-4.jpg" alt="Testimonial" class="rounded-circle border border-4 border-light" width="120px">
+                                </div>
+                                <div class="tm-content">
+                                    <h3 class="pt-2 fw-semibold">Matt Brandon</h3>
+                                    <h4 class="mb-3 fw-normal fs-6 text-secondary">Freelancer</h4>
+                                    <p class="mx-5 mb-5 fst-italic text-secondary"><img src="images/quote-sign-left.png" class="pe-3" alt="left" width="37px"> Fugiat enim eram quae cillum dolore dolor amet nulla culpa multos export minim fugiat minim velit minim dolor enim duis veniam ipsum anim magna sunt elit fore quem dolore labore illum veniam. <img src="images/quote-sign-right.png" class="ps-3" alt="right" width="37px"></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="tm-item text-center wow fadeInUp">
+                                <div class="tm-img">
+                                    <img src="images/testimonial-5.jpg" alt="Testimonial" class="rounded-circle border border-4 border-light" width="120px">
+                                </div>
+                                <div class="tm-content">
+                                    <h3 class="pt-2 fw-semibold">John Larson</h3>
+                                    <h4 class="mb-3 fw-normal fs-6 text-secondary">Entrepreneur</h4>
+                                    <p class="mx-5 mb-5 fst-italic text-secondary"><img src="images/quote-sign-left.png" class="pe-3" alt="left" width="37px">Quis quorum aliqua sint quem legam fore sunt eram irure aliqua veniam tempor noster veniam enim culpa labore duis sunt culpa nulla illum cillum fugiat legam esse veniam culpa fore nisi cillum quid.<img src="images/quote-sign-right.png" class="ps-3" alt="right" width="37px"></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#archie" class="btn-theme active"  data-bs-slide-to="0"></button>
+                        <button type="button" data-bs-target="#archie" class="btn-theme"  data-bs-slide-to="1"></button>
+                        <button type="button" data-bs-target="#archie" class="btn-theme"  data-bs-slide-to="2"></button>
+                        <button type="button" data-bs-target="#archie" class="btn-theme"  data-bs-slide-to="3"></button>
+                        <button type="button" data-bs-target="#archie" class="btn-theme"  data-bs-slide-to="4"></button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Testimonial-end -->
+        <!-- Team-start -->
+        <section>
+            <div class="container py">
+                <div class="team-title text-center wow fadeInUp">
+                    <h2 class="position-relative pb-3 mb-4">TEAM</h2>
+                    <p class="text-secondary pb-5 mb-4">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque</p>
+                </div>
+                <div class="row wow fadeInUp">
+                    <div class="col-md-6 col-lg-3">
+                        <div class="team-item text-center my-2 wow fadeInUp">
+                            <div class="team-img position-relative overflow-hidden">
+                                <img src="images/team-1.jpg" width="100%" alt="team-1">
+                                <div class="team-content text-light position-absolute top-50 start-50 translate-middle">
+                                    <div class="team-text">
+                                        <h4 class="mb-1">Walter White</h4>
+                                        <p class="mb-2 fst-italic">Chief Executive Officer</p>
+                                        <a href="#" class="nav-link d-inline-block me-2"><i class="fa-brands fa-twitter"></i></a>
+                                        <a href="#" class="nav-link d-inline-block me-2"><i class="fa-brands fa-facebook"></i></a>
+                                        <a href="#" class="nav-link d-inline-block me-2"><i class="fa-brands fa-instagram"></i></a>
+                                        <a href="#" class="nav-link d-inline-block me-2"><i class="fa-brands fa-linkedin"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                        <div class="team-item text-center my-2 wow fadeInUp" data-wow-delay="0.2s">
+                            <div class="team-img position-relative overflow-hidden">
+                                <img src="images/team-2.jpg" width="100%" alt="team-1">
+                                <div class="team-content text-light position-absolute top-50 start-50 translate-middle">
+                                   <div class="team-text">
+                                        <h4 class="mb-1">Sara Jhonson</h4>
+                                        <p class="mb-2 fst-italic">Product Manager</p>
+                                        <a href="#" class="nav-link d-inline-block me-2"><i class="fa-brands fa-twitter"></i></a>
+                                        <a href="#" class="nav-link d-inline-block me-2"><i class="fa-brands fa-facebook"></i></a>
+                                        <a href="#" class="nav-link d-inline-block me-2"><i class="fa-brands fa-instagram"></i></a>
+                                        <a href="#" class="nav-link d-inline-block me-2"><i class="fa-brands fa-linkedin"></i></a>
+                                   </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                        <div class="team-item text-center my-2 wow fadeInUp" data-wow-delay="0.3s">
+                            <div class="team-img position-relative overflow-hidden">
+                                <img src="images/team-3.jpg" width="100%" alt="team-1">
+                                <div class="team-content text-light position-absolute top-50 start-50 translate-middle">
+                                    <div class="team-text">
+                                        <h4 class="mb-1">Dishant Patel</h4>
+                                        <p class="mb-2 fst-italic">CTO</p>
+                                        <a href="#" class="nav-link d-inline-block me-2"><i class="fa-brands fa-twitter"></i></a>
+                                        <a href="#" class="nav-link d-inline-block me-2"><i class="fa-brands fa-facebook"></i></a>
+                                        <a href="#" class="nav-link d-inline-block me-2"><i class="fa-brands fa-instagram"></i></a>
+                                        <a href="#" class="nav-link d-inline-block me-2"><i class="fa-brands fa-linkedin"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                        <div class="team-item text-center my-2 wow fadeInUp" data-wow-delay="0.4s">
+                            <div class="team-img position-relative overflow-hidden">
+                                <img src="images/team-4.jpg" width="100%" alt="team-1">
+                                <div class="team-content text-light position-absolute top-50 start-50 translate-middle">
+                                    <div class="team-text">
+                                        <h4 class="mb-1">Amanda Jepson</h4>
+                                        <p class="mb-2 fst-italic">Accountant</p>
+                                        <a href="#" class="nav-link d-inline-block me-2"><i class="fa-brands fa-twitter"></i></a>
+                                        <a href="#" class="nav-link d-inline-block me-2"><i class="fa-brands fa-facebook"></i></a>
+                                        <a href="#" class="nav-link d-inline-block me-2"><i class="fa-brands fa-instagram"></i></a>
+                                        <a href="#" class="nav-link d-inline-block me-2"><i class="fa-brands fa-linkedin"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Team-end -->
+        <!-- Contact Us-start -->
+        <section class="py contact wow fadeInUp">
+            <div class="container">
+                <div class="contact-title text-center wow fadeInUp">
+                    <h2 class="position-relative pb-3 mb-4">CONTACT US</h2>
+                    <p class="text-secondary pb-5 mb-4">Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+                        accusantium doloremque</p>
+                </div>
+                <div class="row wow fadeInUp">
+                    <div class="col-lg-4">
+                        <div class="contact-content text-center py-2 wow fadeInUp">
+                            <i class="ri-map-pin-line theme-color mb-2"></i>
+                            <h3 class="fw-semibold text-secondary">ADDRESS</h3>
+                            <P class="fw-normal">A108 Adam Street, NY 535022, USA</P>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="contact-content text-center py-2 wow fadeInUp border-1 border-start border-end">
+                            <i class="ri-smartphone-line theme-color mb-2"></i>
+                            <h3 class="fw-semibold text-secondary">PHONE NUMBER</h3>
+                            <P class="fw-normal"><a href="#" class="nav-link d-inline">+1 5589 55488 55</a></P>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="contact-content text-center py-2 wow fadeInUp">
+                            <i class="ri-mail-line theme-color mb-2"></i>
+                            <h3 class="fw-semibold text-secondary">EMAIL</h3>
+                            <P class="fw-normal"><a href="#" class="nav-link d-inline">info@example.com</a></P>
+                        </div>
+                    </div>
+                </div>
+                <form class="p-4 mt-5 bg-white text-center shadow wow fadeInUp"data-wow-delay="0.5s">
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <input type="text" placeholder="Your Name"  class="ip w-100 px-3 py-2 border my-2">
+                        </div>
+                        <div class="col-lg-6">
+                            <input type="email" placeholder="Your Email"  class="ip w-100 px-3 py-2 border my-2">
+                        </div>
+                    </div>
+                    <input type="email" placeholder="Subject"  class="ip w-100 px-3 py-2 border my-2">
+                    <textarea rows="5" class="w-100 px-3 py-2 border my-3 ft" placeholder="Message"></textarea>
+                    <button type="button" class="px-4 py-2 btn-theme border-0 text-white my-2">Send Message</button>
+                </form>
+            </div>
+        </section>
+        <!-- Contact Us-end -->
+        <!-- Footer-start-->
+        <footer>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 col-lg-3">
+                        <div class="footer-1 mb-5">
+                            <div class="logo">
+                                <h2><a href="#" class="nav-link text-white px-2 mb-4">BizPage</a></h2>
+                            </div>
+                            <p class="text-white fw-light">Cras fermentum odio eu feugiat lide par naso tierra. Justo eget
+                                nada terra videa magna derita valies darta donna mare fermentum iaculis eu non diam
+                                phasellus. Scelerisque felis imperdiet proin fermentum leo. Amet volutpat consequat mauris
+                                nunc congue.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                        <div class="footer-2 text-white mb-5">
+                            <h4 class="fw-semibold position-relative pb-2">USEFUL LINKS</h4>
+                            <ul class="navbar-nav">
+                                <li><a href="#" class="nav-link d-flex align-items-center p-0"><i class="ri-arrow-right-s-line pe-2"></i>Home</a></li>
+                                <li><a href="#" class="nav-link d-flex align-items-center p-0"> <i class="ri-arrow-right-s-line pe-2"></i>About us</a></li>
+                                <li><a href="#" class="nav-link d-flex align-items-center p-0"> <i class="ri-arrow-right-s-line pe-2"></i>Services</a></li>
+                                <li><a href="#" class="nav-link d-flex align-items-center p-0"> <i class="ri-arrow-right-s-line pe-2"></i>Terms of service</a></li>
+                                <li><a href="#" class="nav-link d-flex align-items-center p-0"> <i class="ri-arrow-right-s-line pe-2"></i>Privacy policy</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                        <div class="footer-3 text-white">
+                            <h4 class="position-relative pb-2">CONTACT US</h4>
+                            <p>A108 Adam Street <br> New York, NY 535022 <br> United States <br> <span class="fw-semibold">Phone:</span>+1 5589 55488 55<br>
+                                <span class="fw-semibold">Email:</span> info@example.com
+                            </p>
+                            <div class="social-icon d-flex mb-5">
+                                <a href="#" class="text-white mx-1 nav-link rounded-circle d-flex justify-content-center align-items-center"><i class="fa-brands fa-twitter"></i></a>
+                                <a href="#" class="text-white mx-1 nav-link rounded-circle d-flex justify-content-center align-items-center"><i class="fa-brands fa-facebook"></i></a>
+                                <a href="#" class="text-white mx-1 nav-link rounded-circle d-flex justify-content-center align-items-center"><i class="fa-brands fa-instagram"></i></a>
+                                <a href="#" class="text-white mx-1 nav-link rounded-circle d-flex justify-content-center align-items-center"><i class="fa-brands fa-linkedin"></i></a>
+                                <a href="#" class="text-white mx-1 nav-link rounded-circle d-flex justify-content-center align-items-center"><i class="fa-brands fa-vimeo"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                        <div class="footer-4 text-white">
+                            <h4 class="position-relative pb-2">OUR NEWSLETTER</h4>
+                            <p>Tamen quem nulla quae legam multos aute sint culpa legam noster magna veniam enim veniam illum dolore legam minim quorum culpa amet      magna export quem marada parida nodela caramase seza.</p>
+                            <form>
+                                <div class="input-group">
+                                    <input type="email">
+                                    <button type="submit" class="input-group-text btn-theme border-0 text-white fw-normal">Subscribe</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <div class="footer-down dark-color text-white text-center py-4">
+            <div class="container">
+                <div class="copyright">
+               <p class="mb-0"> © Copyright <span class="fw-semibold">BizPage</span> . All Rights Reserved</p>
+            </div>
+            <div>
+               <p class="mb-0"> Designed by <a href="#" class="nav-link d-inline"><span class="theme-color">BootstrapMade</span></a></p>
+            </div>
+            </div>
+        </div>
+        <div class="top">
+            <a href="#" class="btn-theme text-center rounded-circle position-fixed text-white nav-link"><i class="fas fa-redo-alt"></i></a>
+        </div>
+        <!-- Footer-end -->
+    </main>
+    <script src="js/bootstrap.bundle.min.js" type="text/javascript"></script>
+    <script src="js/wow.min.js" type="text/javascript"></script>
+    <script>
+        wow = new WOW(
+                     {
+                     boxClass:     'wow',      // default
+                     animateClass: 'animated', // default
+                     offset:       0,          // default
+                     mobile:       true,       // default
+                     live:         true        // default
+                   }
+                   )
+                   wow.init();
+   </script>
+</body>
+
+</html>

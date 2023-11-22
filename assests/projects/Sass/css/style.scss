@@ -1,0 +1,685 @@
+$light-color: white;
+$dark-color: black;
+$theme-color: #c6b069;
+$text-color: #777777;
+$hover-color: #04091e;
+$border-color: #eee;
+$overlay-color:#373642c0;
+$lighty-color:#f9f9ff;
+$header-color:#39353e;
+$over-lay-color:rgba(4, 9, 30, 0.7);
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@mixin title {
+    font-size: 36px;
+    letter-spacing: 1px;
+    margin-bottom: 8px;
+    font-weight: 600;
+}
+@mixin p {
+    font-size: 14px;
+    font-weight: 300;
+    color: $text-color;
+}
+.container {
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+a {
+    text-decoration: none;
+    display: inline-block;
+}
+.d-flex {
+    display: flex;
+}
+.row {
+    flex-wrap: wrap;
+    display: flex;
+}
+.text-center {
+    text-align: center;
+}
+.justify-center {
+    justify-content: center;
+}
+.justify-between {
+    justify-content: space-between;
+}
+.text-center {
+    text-align: center;
+}
+.align-center {
+    align-items: center;
+}
+li {
+    list-style: none;
+}
+.w-1 {
+    width: 100%;
+}
+.w-2 {
+    width: 50%;
+}
+.w-3 {
+    width: 33.33%;
+}
+.w-4 {
+    width: 25%;
+}
+.w-5 {
+    width: 20%;
+}
+.w-70{
+    width: 70%;
+}
+.w-40{
+    width: 40%;
+}
+.w-30{
+    width: 30%;
+}
+.w-20{
+    width: 20%;
+}
+img {
+    max-width: 100%;
+    display: block;
+}
+.py {
+    padding: 70px 0;
+}
+body {
+    font-family: 'Poppins', sans-serif;
+}
+::selection {
+    background-color: $theme-color;
+    color: $light-color;
+}
+// HEADER
+header {
+    position: absolute;
+    width: 100%;
+    z-index: 99;
+    background-color: $over-lay-color;
+    position: fixed;
+    .top-bar {
+        position: relative;
+        border-bottom: 1px solid $header-color;
+        padding: 5px 0;
+        .contact {
+            p {
+                padding-right: 10px;
+                a {
+                    color: $light-color;
+                    font-size: 12px;
+                }
+            }
+        }
+        .icon {
+            a {
+                i {
+                    transition: all 0.3s linear;
+                    &:hover {
+                        color: $theme-color;
+                    }
+                    margin-left: 15px;
+                    color: $light-color;
+                    font-size: 12px;
+                }
+            }
+        }
+    }
+    nav {
+        ul {
+            .dropdown {
+                position: relative;
+                &:hover .dropdown-menu {
+                    opacity: 1;
+                    visibility: visible;
+                    transform: translateY(0);
+                }
+                a {
+                    i {
+                        font-size: 18px;
+                    }
+                }
+                .dropdown-menu {
+                    position: absolute;
+                    top: 100%;
+                    left: -129px;
+                    background-color: $light-color;
+                    width: 195px;
+                    opacity: 0;
+                    visibility: hidden;
+                    transform: translateY(20px);
+                    transition: all 0.3s linear;
+                    ul {
+                        li {
+                            a {
+                                transition: all 0.3s linear;
+                                &:hover {
+                                    color: $theme-color;
+                                }
+                                color: $dark-color;
+                                font-size: 12px;
+                                padding: 10px;
+                            }
+                        }
+                    }
+                }
+            }
+            .dropdown-2 {
+                position: relative;
+                &:hover .dropdown-menu-2 {
+                    opacity: 1;
+                    visibility: visible;
+                    transform: translateY(0px);
+                }
+                .dropdown-menu-2 {
+                    position: absolute;
+                    width: 200px;
+                    background-color: $light-color;
+                    top: 100%;
+                    left: -122px;
+                    opacity: 0;
+                    visibility: hidden;
+                    transform: translateY(20px);
+                    transition: all 0.3s linear;
+                }
+                ul {
+                    .submenu {
+                        position: relative;
+                        &:hover .sub-menu {
+                            opacity: 1;
+                            visibility: visible;
+                            transform: translateY(0px);
+                        }
+                        .sub-menu {
+                            position: absolute;
+                            width: 150px;
+                            background-color: $light-color;
+                            bottom: -48px;
+                            right: 100%;
+                            opacity: 0;
+                            visibility: hidden;
+                            transform: translateY(20px);
+                            transition: all 0.3s linear;
+                            ul {
+                                li {
+                                    a {
+                                        padding: 10px;
+                                        font-size: 12px;
+                                    }
+                                }
+                            }
+                        }
+                        a {
+                            font-size: 12px;
+                        }
+                    }
+                    li {
+                        a {
+                            transition: all 0.3s linear;
+                            &:hover {
+                                color: $theme-color;
+                            }
+                            color:$dark-color;
+                            font-size: 12px;
+                            padding: 10px;
+                            i {
+                                font-size: 18px;
+                            }
+                        }
+                    }
+                }
+            }
+            li {
+                a {
+                    padding: 35px 0 15px 27px;
+                    font-size: 13px;
+                    color: $light-color;
+                }
+            }
+        }
+    } 
+}
+// banner
+.banner {
+    background-image: url('../images/banner-bg.jpg.webp');
+    background-attachment: fixed;
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    z-index: 9;
+    &::after {
+        content: '';
+        position: absolute;
+        background-color:$over-lay-color;
+        width: 100%;
+        height: 100vh;
+        top: 0;
+        left: 0;
+        z-index: -1;
+    }
+    .banner-content {
+        flex-direction: column;
+        height: 100vh;
+        color: $light-color;
+        h1 {
+            text-align: center;
+            font-size: 42px;
+            word-spacing: 2px;
+            letter-spacing: 2px;
+        }
+        p {
+            margin: 25px 125px;
+            text-align: center;
+            font-size: 15px;
+        }
+        .btn {
+            padding: 10px 20px;
+            border: 1px solid transparent;
+            background-color: $theme-color;
+            transition: all 0.3s linear;
+            color: $light-color;
+            &:hover {
+                background-color: transparent;
+                border: 1px solid $light-color;
+            }
+        }
+    }
+}
+
+// Offer
+.offer-title {
+    padding-bottom: 50px;
+    h2 {
+        @include title;
+    }
+    p {
+        @include p;
+    }
+}
+
+.offer-content {
+    margin: 0 15px;
+    padding: 22px;
+    border: 1px solid $border-color;
+    border-radius: 10px;
+    transition: all 0.5s linear;
+    &:hover {
+        background-color: $dark-color;
+    }
+    &:hover h4 a {
+        color: $theme-color;
+    }
+    h4 {
+        margin-bottom: 10px;
+        a {
+            color: $dark-color;
+            font-weight: 600;
+        }
+    }
+    p {
+        font-size: 14px;
+        font-weight: 300;
+        color: $text-color;
+        line-height: 1.625em;
+    }
+}
+
+// Gallery
+.gallery-title {
+    padding-bottom: 50px;
+    h2 {
+        @include title;
+    }
+    p{
+        @include p;
+    }
+}
+.gallery-item{
+    height: 100%;
+    padding: 10px;
+    position: relative;
+    .gallery-img{
+      height: 100%; 
+      border-radius: 15px;
+    }
+    .overlay{
+        position: absolute;
+        background-color: $overlay-color;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        border-radius: 15px;
+        margin: 35px;
+        border: 1px solid $theme-color;
+        opacity: 0;
+        transition:all 0.2s linear;
+        .overlay-content{
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            transform: translateY(100px);
+            transition: all 0.3s linear;
+            h4{
+                border-bottom: 1px solid $theme-color;
+                margin-bottom: 15px;
+                text-align: center;
+                word-spacing: 2px;
+                padding-bottom: 15px;
+                font-weight: 600;
+                a{
+                    color: $light-color;
+                }
+            }
+            .btn{
+                padding: 10px 20px;
+                background-color: $theme-color;
+                color: $light-color;
+            }
+        }
+    }
+    &:hover .overlay{
+        opacity: 1;
+    }
+    &:hover .overlay .overlay-content{
+        transform: translateY(0);
+    }
+}
+// Features
+.features{
+    background-color: $theme-color;
+    .features-title{
+        padding-bottom: 50px;
+        h2{
+            @include title;
+            color: $light-color
+        }
+        p{
+            @include p;
+            color: $light-color;
+            line-height: 1.625em;
+        }
+    }
+    .features-content{
+        margin:15px;
+        padding: 27px;
+        border-radius: 10px;
+        transition: all 0.5s linear;
+        background-color: $light-color;
+       .title{
+            margin-bottom: 20px;
+            i{
+                font-size: 28px;
+                color: $dark-color;
+                transition: all 0.3s linear;
+            }
+            h3{
+                font-weight: 600;
+                margin-left: 15px;
+                word-spacing: 2px;
+                color: $dark-color;
+                transition: all 0.3s linear;
+            }
+       }
+       p{
+        color: $text-color;
+        @include p;
+        line-height: 1.625em;
+        cursor: pointer;
+       }
+        a{
+            font-size: 14px;
+            font-weight: 300;
+            color: $text-color;
+       }
+       &:hover{
+        background-color: $dark-color;
+       }
+       &:hover .title i{
+            color: $theme-color;
+       }
+       &:hover .title h3{
+        color: $theme-color;
+       }
+    }
+}
+// Review
+.review-title{
+    padding-bottom: 50px;
+    h2{
+        @include title;
+    }
+    p{
+        @include p;
+    }
+}
+.review-content{
+    border: 1px solid $border-color;
+    padding:30px 20px 20px 20px;
+    border-radius: 15px;
+    margin-right: 30px;
+    cursor: pointer;
+    .review-text{
+        line-height: 25px;
+        margin-left: 25px;
+        p{
+            @include p;
+        }
+        h3{
+            margin-top: 10px;
+            font-weight: 600;
+            transition: all 0.3s linear;
+        }
+        i{
+                font-size: 14px;
+                color: $theme-color;
+        }
+        span{
+            i{
+                color: $text-color;
+            }
+        }
+    }
+    &:hover .review-text h3{
+        color: $theme-color;
+    }
+}
+// Design
+.design{
+    background:linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)),url(../images/design.webp);
+    background-size: cover;
+    border-radius: 10px;
+    .design-content{
+        padding: 120px 0;
+        h2{
+            @include title;
+            color: $light-color;
+        }
+        p{
+            @include p;
+            color: $light-color;
+            margin: 20px 260px;
+        }
+        .btn{
+            background-color: $theme-color;
+            line-height: 42px;
+            padding: 0 30px;
+            color: $light-color;
+            font-weight: 500;
+            border: 1px solid transparent;
+            transition: all 0.3s linear;
+            font-size: 14px;
+            &:hover{
+                background-color: transparent;
+                border-color: $light-color;
+            }
+        }
+    }
+} 
+// Event
+.event-title{
+    h2{
+        @include title;
+    }
+    p{
+        @include p;
+    }
+}
+.event-item{
+    margin-top: 70px;
+    margin-right: 30px;
+    .event-img{
+        border-radius: 15px;
+        .menu{
+            background-color: transparent;
+            padding: 4px 12px;
+            border: 1px solid $border-color;
+            font-size: 12px;
+            color: $dark-color;
+            margin-top: 12px;
+            transition: all 0.3s linear;
+            &:hover{
+                background-color: $theme-color;
+                color: $light-color;
+            }
+        }
+    }
+    .event-content{
+        h4{
+            font-weight: 600;
+            font-size: 18px;
+            margin: 20px 0;
+            a{
+                color: $dark-color;
+            }
+        }
+        p{
+            @include p;
+            line-height: 1.625em;
+            margin-bottom: 1rem;
+        }
+        h6{
+            font-weight: 300;
+            font-size: 14px;
+            color: $hover-color;
+            line-height: 1.2em;
+        }
+    }
+}
+// Project
+.project{
+    background-color:$lighty-color;
+    .project-img{
+        padding: 60px 0;
+        a{
+            img{
+                filter: grayscale(100%);
+                opacity: 0.8;
+                transition: all 0.3s linear;
+                margin: 0 35px;
+            }
+        }
+        &:hover a img{
+            filter: grayscale(0);
+            opacity: 1;
+        }
+    }
+}
+// Footer
+footer{
+    padding: 120px 0;
+    ::selection{
+        background-color: $dark-color;
+        color: $text-color;
+    }
+    .footer-1{
+        padding: 0 15px;
+        h3{
+            font-weight: 600;
+            margin-bottom: 25px;
+        }
+        p{
+            @include p;
+            text-align: left;
+            margin-bottom: 1rem;
+            line-height: 1.625em;
+        }
+        .footer-text{
+            p{
+                padding-top: 20px;
+                margin-bottom: 1rem;
+                i{
+                    color: $theme-color;
+                    font-size: 14px;
+                }
+                a{
+                    color: $theme-color;
+                }
+            }
+        }
+    }
+    .footer-2{
+        padding: 0 15px;
+        h3{
+            font-weight: 600;
+            margin-bottom: 25px;
+        }
+        p{
+            @include p;
+            margin-bottom: 1rem;
+        }
+        input{
+            width: 80%;
+            font-weight: 300;
+            background-color: $lighty-color;
+            padding: 10px 18px;
+            font-size: 14px;
+            border: 1px solid $lighty-color;
+            outline: none;
+        }
+        span{
+            background-color: $theme-color;
+            padding: 8px 12px;
+            cursor: pointer;
+            a{
+                color: $lighty-color;
+            }
+        }
+    }
+    .footer-3{
+        padding: 0 15px;
+        h3{
+            font-weight: 600;
+            margin-bottom: 25px;
+        }
+        p{
+            @include p;
+            margin-bottom: 1rem;
+        }
+        a{
+            padding-right: 25px;
+            i{
+                color: $text-color;
+                font-size: 14px;
+                transition: all 0.3s linear;
+                &:hover{
+                    color: $theme-color;
+                }
+            }
+        }
+    }
+}

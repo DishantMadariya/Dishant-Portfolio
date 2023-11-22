@@ -1,0 +1,120 @@
+/* XL */
+@MEDIA(max-width:1399px){
+    .container{
+        max-width: 1140px;
+    }
+}
+/* LG */
+@media(max-width:1199px){
+    .container{
+        max-width: 960px;
+    }
+    .w-lg-3{
+        width: 33.33%;
+    }
+}
+/* MD */
+@media(max-width:991px){
+    .container{
+        max-width: 720px;
+    }
+    .w-md-2{
+        width: 50%;
+    }
+    .w-md-1{
+        width: 100%;
+    }
+    /* About us */
+    .about-img img{
+        width: 80%;
+    }
+    .about-img::after{
+        right: -5%;
+    }
+    .about-content{
+        margin: 50px 0 0 0;
+    }
+    /* Count */
+    .count-number p{
+        margin: 30px 0 0 0;
+    }
+    /* Event */
+    .event-item{
+        margin: 20px 10px;
+    }
+    /* Review */
+    .review-content{
+        margin: 25px 10px;
+    }
+    .review-title h2 , .event-title h2{
+        margin-bottom: 45px;
+    }
+    /* Footer */
+    .footer-2{
+        margin-left: 0;
+    }
+}
+/* SM */
+@media(max-width:767px){
+    .container{
+        max-width: 540px;
+    }
+    .w-sm-1{
+        width: 100%;
+    }
+    .w-sm-2{
+        width: 50%;
+    }
+    /* Header */
+    nav ul{
+        position: absolute;
+        top: 100%;
+        left: 0;
+        flex-direction: column;
+        right: 0;
+        background-color: lightslategray;
+    }
+    .dropdown-menu ul{
+        background-color:var(--dark-color);
+        border-radius: 15px;
+    }
+    .toggle{
+        display: block;
+    }
+    /* About us */
+    .about-img::before{
+        z-index: 9;
+    }
+}
+/* XS */
+@media(max-width:575px){
+    .w-xs-1{
+        width: 100%;
+    }
+    /* Header */
+    .sub-menu{
+        width: 120px;
+        right: -120px;
+    }
+    .top a{
+        bottom: 15px;
+        right: 6px;
+    }
+    /* About us */
+    .about-img img{
+        width: 90%;
+    }
+    .about-img::after{
+        right: -3%;
+    }
+    .about-img::before{
+        z-index: 9;
+    }
+    /* Footer */
+    .footer-2{
+        margin-top: 30px;
+    }
+    .footer-4{
+        margin-top: 30px;
+    }
+}

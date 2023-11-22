@@ -1,0 +1,206 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --theme-color:#7cbd1e;
+    --theme-dark:#669c19;
+    --theme-border:#5f9117;
+    --text-color:#adb5bd;
+    --light-color:white;
+    --dark-color:#393e46;
+    --black-color:black;
+}
+.fs-7{
+    font-size: 1.1rem !important;
+}
+.fs-8{
+    font-size: 1rem !important;
+}
+.bg-theme{
+    background-color: var(--theme-color) !important;
+}
+.text-theme{
+    color: var(--theme-color) !important;
+}
+.whitey:hover{
+    background-color: var(--light-color) !important;
+    color: var(--black-color) !important;
+}
+body{
+    font-family: 'Open Sans', sans-serif;
+}
+.btn-outline-theme{
+    border-color: var(--theme-color) !important;
+}
+.py{
+    padding: 7em 0 !important;
+}
+.text-white-50{
+    color: rgba(255, 255, 255, 0.7) !important;
+}
+/* Header */
+header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+.unit{
+    font-size: 13px;
+    color: var(--text-color);
+}
+.button{
+    transition: all 0.3s linear;
+}
+.button:hover{
+    background-color: var(--theme-color);
+    border-color: var(--theme-color) !important;
+}
+.click{
+    transition: all 0.3s linear;
+}
+.click:hover{
+    background-color: var(--theme-dark) !important;
+    border-color: var(--theme-border) !important;
+}
+nav ul li a:hover{
+    color: var(--light-color) !important;
+}
+.drop-menu ul li a{
+    transition: all 0.3s linear;
+}
+.drop-menu ul li a:hover{
+    color: var(--theme-color) !important;
+}
+.drop-menu{
+    width: 170px;
+    z-index: 9;
+    transform: translateY(40px);
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.5s linear;
+}
+.drop-down:hover .drop-menu{
+    transform: translateY(0);
+    opacity: 1;
+    visibility: visible;
+}
+.sub:hover .sub-menu{
+    transform: translateY(0);
+    opacity: 1;
+    visibility: visible;
+}
+.sub-menu{
+    width: 150px;
+    left: 162px;
+    transform: translateY(40px);
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s linear;
+}
+.arrow-drop::after{
+    content: '\f0de';
+    font-family: fontawesome;
+    position: absolute;
+    top: -18px;
+    left: 28px;
+    font-size: 30px;
+    color: var(--light-color);
+}
+/* Banner */
+.carousel-item p{
+    font-size: 1.5rem;
+}
+.over::after{
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.66);
+    top: 0;
+    left: 0;
+}
+/* Hosting */
+.hosting-content i{
+    font-size: 4rem;
+}
+.hosting-content p{
+    color: var(--text-color);
+}
+/* Client */
+.client{
+    background-image:linear-gradient(rgba(0, 0, 0, 0.577) , rgba(0, 0, 0, 0.577)) , url(../images/hero_bg_3.jpg);
+    height: 600px;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.client .row{
+    min-height: 600px;
+    height: calc(40vh);
+}
+.client-content{
+    height: 100%;
+}
+.client h2{
+    font-size: 4rem;
+}
+/* service */
+.service-item::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    background-color: var(--theme-color);
+    opacity: 0;
+    visibility: hidden;
+    transform: scale(1.08);
+    transition: all 0.3s linear;
+}
+.icon .img , .service-icon h4 , .icon i , .service-item p{
+    transition: all 0.3s linear;
+}
+.service-item:hover{
+    border: none !important;
+}
+.service-item:hover::after{
+    opacity: 1;
+    visibility: visible;
+    transform: scale(1);
+}
+.service-item:hover .icon .img{
+    display: block !important;
+}
+.service-item:hover .service-icon h4 , .service-item:hover .icon i , .service-item:hover p{
+    color: var(--light-color) !important;
+}
+/* Testimonial */
+.tm-content h3{
+    font-size: 18px !important;
+}
+.testimonial .carousel-indicators{
+    bottom: -15% !important ;
+}
+.testimonial .carousel-indicators button{
+    width: 10px !important;
+    height: 10px !important;
+    border-radius: 50%;
+}
+/* footer */
+footer{
+    padding: 110px 0;
+    background: var(--dark-color);
+}
+footer ul li a:hover{
+    color: var(--light-color) !important;
+}
+footer .copy a:hover{
+    color: var(--light-color) !important;
+}
+.copy a:hover{
+    color: var(--light-color) !important;
+}
