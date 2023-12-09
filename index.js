@@ -4,7 +4,7 @@ const app = express();
 const path = require('path');
 // const cd = require('./config/mongoose');
 const mongoose = require('mongoose');
-const connectionString = 'mongodb+srv://adishantpatel:DishArchie1630@dishant14.6tkvngs.mongodb.net/contact';
+const connectionString = 'mongodb+srv://dishantpatel:Duggu1630@portfolio.qs9kwwd.mongodb.net/contact';
 mongoose.connect(connectionString, {
     useUnifiedTopology: true,
     useNewUrlParser: true,
